@@ -1,75 +1,61 @@
 @import "font.css";
 @import "color-style.css";
 /* Navigation */
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
 header {
   box-shadow: black 3px 3px;
 }
-
 nav {
   display: flex;
 }
-
 ul {
   padding-left: 0;
 }
-
 #brand {
   padding-left: 1em;
   padding-top: 6px;
 }
-
 .nav-centrale {
   display: flex;
   margin: 30px auto;
 }
-
 .nav-centrale li:not(:first-child) {
   padding-left: 30px;
 }
-
 .extra-nav-entry {
   position: relative;
   z-index: 20;
 }
-
 .extra-nav-entry:after {
   content: url("../../../public/images/arrow-nav.svg");
   position: absolute;
   transform: translateX(8px);
 }
-
 .menu-deroulant {
   position: relative;
   width: 168px;
   text-align: center;
 }
-
 #sous-menu {
   flex-direction: column;
   position: absolute;
   width: 168px;
 }
-
 .appear {
   transform: translateY(-20em);
 }
-
 #sous-menu li {
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
   z-index: 10;
 }
-
 .menu-deroulant {
   padding-top: 30px;
 }
-
+/*# sourceMappingURL=style.css.map */
