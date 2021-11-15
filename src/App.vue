@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <header>
-      <nav id="nav">
+      <nav id="navigation">
         <div id="brand">
           <router-link to="/">
             <img src="images/Logo%20MMi-black.svg" alt="Logo du département MMI de Montbéliard">
           </router-link>
         </div>
-        <ul>
+        <ul class="nav-centrale">
           <li>
             <a href="#">Département</a>
           </li>
@@ -19,11 +19,15 @@
           </li>
         </ul>
         <div id="extras" class="menu-deroulant">
-          <a href="#">Extras</a>
-          <ul class="sous-menu">
+          <a href="#" class="extra-nav-entry" onclick="document.getElementById('sous-menu').classList.toggle('appear')">Extras</a>
+          <ul class="appear" id="sous-menu">
             <li>
               <a href="#">Contact</a>
+            </li>
+            <li>
               <a href="#">Espace Pro</a>
+            </li>
+            <li>
               <a href="#">Actualités</a>
             </li>
           </ul>
