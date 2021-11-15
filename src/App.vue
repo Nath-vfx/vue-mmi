@@ -40,7 +40,39 @@
       </nav>
     </header>
 
-    <router-view/>
+    <div class="growth">
+      <router-view/>
+    </div>
+
+    <footer>
+      <div class="footer-cat">
+        <div class="footer-cat-column">
+          <h5>La formation</h5>
+          <ul>
+            <li>But MMi</li>
+            <li>Licence Pro</li>
+            <li>But MMi</li>
+          </ul>
+        </div>
+        <div class="footer-cat-column">
+          <h5>A propos</h5>
+          <ul>
+            <li>Mentions légales</li>
+            <li>CGU</li>
+            <li>Politique de confidentialités</li>
+          </ul>
+        </div>
+        <div class="footer-cat-column">
+          <h5>La formation</h5>
+          <ul>
+            <li>Nous Contacter</li>
+            <li>Espace Pro</li>
+          </ul>
+        </div>
+        <div class="footer-cat-column"></div>
+        <div class="footer-cat-column"></div>
+      </div>
+    </footer>
   </div>
 </template>
 

@@ -1,11 +1,14 @@
 @import "font.css";
 @import "color-style.css";
+
+
 /* Navigation */
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -29,7 +32,6 @@ ul {
 
 #extra-nav {
   height: 100%;
-  border-bottom: 2px black solid;
 }
 
 .nav-centrale li:not(:first-child) {
@@ -61,6 +63,7 @@ ul {
 }
 
 .underline-toggle {
+  border-bottom: solid 2px black;
 }
 
 #sous-menu li {
@@ -69,8 +72,15 @@ ul {
   text-align: center;
 }
 
-
 .menu-deroulant {
   padding-top: 30px;
 }
 
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
