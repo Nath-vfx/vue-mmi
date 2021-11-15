@@ -9,10 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  box-shadow: black 3px 3px;
-}
-
 nav {
   display: flex;
 }
@@ -31,13 +27,13 @@ ul {
   margin: 30px auto;
 }
 
-.nav-centrale li:not(:first-child) {
-  padding-left: 30px;
+#extra-nav {
+  height: 100%;
+  border-bottom: 2px black solid;
 }
 
-.extra-nav-entry {
-  position: relative;
-  z-index: 20;
+.nav-centrale li:not(:first-child) {
+  padding-left: 30px;
 }
 
 .extra-nav-entry:after {
@@ -56,18 +52,23 @@ ul {
   flex-direction: column;
   position: absolute;
   width: 168px;
+  transition: .3s all ease-out;
+  z-index: -1;
 }
 
 .appear {
-  transform: translateY(-20em);
+  transform: translateY(-25em);
+}
+
+.underline-toggle {
 }
 
 #sous-menu li {
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
-  z-index: 10;
 }
+
 
 .menu-deroulant {
   padding-top: 30px;

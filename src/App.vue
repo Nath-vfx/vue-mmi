@@ -19,7 +19,10 @@
           </li>
         </ul>
         <div id="extras" class="menu-deroulant">
-          <a href="#" class="extra-nav-entry" onclick="document.getElementById('sous-menu').classList.toggle('appear')">Extras</a>
+          <div id="extra-nav" class="">
+          <a href="#" class="extra-nav-entry" onclick="document.getElementById('sous-menu').classList.toggle('appear');
+            document.getElementById('extra-nav').classList.toggle('underline-toggle')">Extras</a>
+          </div>
           <ul class="appear" id="sous-menu">
             <li>
               <a href="#">Contact</a>
@@ -32,6 +35,7 @@
             </li>
           </ul>
         </div>
+
 
       </nav>
     </header>

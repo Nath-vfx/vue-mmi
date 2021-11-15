@@ -7,9 +7,6 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
-header {
-  box-shadow: black 3px 3px;
-}
 nav {
   display: flex;
 }
@@ -24,12 +21,12 @@ ul {
   display: flex;
   margin: 30px auto;
 }
+#extra-nav {
+  height: 100%;
+  border-bottom: 2px black solid;
+}
 .nav-centrale li:not(:first-child) {
   padding-left: 30px;
-}
-.extra-nav-entry {
-  position: relative;
-  z-index: 20;
 }
 .extra-nav-entry:after {
   content: url("../../../public/images/arrow-nav.svg");
@@ -45,15 +42,16 @@ ul {
   flex-direction: column;
   position: absolute;
   width: 168px;
+  transition: 0.3s all ease-out;
+  z-index: -1;
 }
 .appear {
-  transform: translateY(-20em);
+  transform: translateY(-25em);
 }
 #sous-menu li {
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
-  z-index: 10;
 }
 .menu-deroulant {
   padding-top: 30px;
