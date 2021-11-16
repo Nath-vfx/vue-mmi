@@ -66,4 +66,36 @@ footer {
   left: 0;
   width: 100%;
 }
+.footer-cat {
+  display: flex;
+}
+.footer-cat-column {
+  flex-grow: 3;
+}
+.footer-cat-column li {
+  padding: 1em 0;
+}
+footer h1 {
+  flex-grow: 10;
+  padding-left: 1em;
+}
+.footer-logo {
+  border-bottom: #9A9A9A 1px solid;
+}
+.footer-logo ul {
+  display: flex;
+}
+.footer-logo #logoMMifooter {
+  flex-grow: 1;
+}
+.footer-logo li {
+  flex-grow: 1;
+  display: flex;
+}
+#bottom-footer ul {
+  display: flex;
+}
+#bottom-footer li {
+  margin-left: 1em;
+}
 /*# sourceMappingURL=style.css.map */
