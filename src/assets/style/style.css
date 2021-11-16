@@ -5,10 +5,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
   overflow-x: hidden;
-}
-header {
-  box-shadow: black 3px 3px;
 }
 nav {
   display: flex;
@@ -24,12 +22,11 @@ ul {
   display: flex;
   margin: 30px auto;
 }
+#extra-nav {
+  height: 100%;
+}
 .nav-centrale li:not(:first-child) {
   padding-left: 30px;
-}
-.extra-nav-entry {
-  position: relative;
-  z-index: 20;
 }
 .extra-nav-entry:after {
   content: url("../../../public/images/arrow-nav.svg");
@@ -45,17 +42,60 @@ ul {
   flex-direction: column;
   position: absolute;
   width: 168px;
+  transition: 0.3s all ease-out;
+  z-index: -1;
 }
 .appear {
-  transform: translateY(-20em);
+  transform: translateY(-25em);
+}
+.underline-toggle {
+  border-bottom: solid 2px black;
 }
 #sous-menu li {
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
-  z-index: 10;
 }
 .menu-deroulant {
   padding-top: 30px;
+}
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer-cat {
+  display: flex;
+}
+.footer-cat-column {
+  flex-grow: 3;
+}
+.footer-cat-column li {
+  padding: 1em 0;
+}
+footer h1 {
+  flex-grow: 10;
+  padding-left: 1em;
+}
+.footer-logo {
+  border-bottom: #9A9A9A 1px solid;
+}
+.footer-logo ul {
+  display: flex;
+}
+.footer-logo #logoMMifooter {
+  flex-grow: 1;
+}
+.footer-logo li {
+  flex-grow: 1;
+  display: flex;
+}
+#bottom-footer ul {
+  display: flex;
+}
+#bottom-footer li {
+  margin-left: 1em;
 }
 /*# sourceMappingURL=style.css.map */
