@@ -11,13 +11,13 @@
         <div id="burger" class="">
           <ul class="nav-centrale">
             <li>
-              <a href="#">Département</a>
+              <router-link to="/departement">Département</router-link>
             </li>
             <li>
-              <a href="#">BUT MMi</a>
+              <router-link to="/but-mmi">BUT MMi</router-link>
             </li>
             <li>
-              <a href="#">Mobilité Internationale</a>
+              <router-link to="/mobilite">Mobilité Internationale</router-link>
             </li>
           </ul>
           <div id="extras" class="menu-deroulant">
@@ -29,13 +29,16 @@
             </div>
             <ul class="appear" id="sous-menu">
               <li>
-                <a href="#">Contact</a>
+                <router-link to="/contact">Contact</router-link>
               </li>
               <li>
-                <a href="#">Espace Pro</a>
+                <router-link to="/espace-pro">Espace Pro</router-link>
               </li>
               <li>
-                <a href="#">Actualités</a>
+                <router-link to="/actualites">Actualités</router-link>
+              </li>
+              <li>
+                <router-link to="/about">A propos</router-link>
               </li>
             </ul>
           </div>
@@ -54,24 +57,24 @@
         <div class="footer-cat-column">
           <h5>La formation</h5>
           <ul>
-            <li><a href="">But MMi</a></li>
-            <li><a href="">Licence Pro</a></li>
-            <li><a href="">But MMi</a></li>
+            <li><router-link to="/but-mmi">But MMi</router-link></li>
+            <li><router-link to="/licence-pro">Licence Pro</router-link></li>
+            <li><router-link to="/mobilite">Mobilité <br>Internationale</router-link></li>
           </ul>
         </div>
         <div class="footer-cat-column">
           <h5>A propos</h5>
           <ul>
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="">CGU</a></li>
-            <li><a href="">Politique de <br>confidentialités</a></li>
+            <li><router-link to="/mentions-legales">Mentions légales</router-link></li>
+            <li><router-link to="/cgu">CGU</router-link></li>
+            <li><router-link to="/politique-confidentialite">Politique de <br>confidentialités</router-link></li>
           </ul>
         </div>
         <div class="footer-cat-column">
           <h5>La formation</h5>
           <ul>
-            <li><a href="">Nous Contacter</a></li>
-            <li><a href="">Espace Pro</a></li>
+            <li><router-link to="/contact">Nous Contacter</router-link></li>
+            <li><router-link to="/espace-pro">Espace Pro</router-link></li>
           </ul>
         </div>
       </div>
@@ -137,14 +140,20 @@
       </div>
       <div id="bottom-footer">
         <ul>
-          <li><a href="#">Politique de confidentialité</a></li>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">CGU</a></li>
+          <li><router-link to="/politique-confidentialite">Politique de confidentialité</router-link></li>
+          <li><router-link to="/mentions-legales">Mentions légales</router-link></li>
+          <li><router-link to="/cgu">CGU</router-link></li>
         </ul>
       </div>
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
 
 <style lang="less">
 @import "assets/style/style.css";
