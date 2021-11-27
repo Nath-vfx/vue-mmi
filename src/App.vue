@@ -47,9 +47,8 @@
       </nav>
     </header>
 
-    <div class="growth">
+
       <router-view/>
-    </div>
 
     <footer>
       <div class="footer-cat">
