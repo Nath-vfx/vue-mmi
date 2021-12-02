@@ -90,6 +90,7 @@
       <a href="">
         <button>Déposer une offre</button>
       </a>
+      <img src="" alt="">
     </div>
     <div>
       <h3>Mobilité <span>Internationale</span></h3>
