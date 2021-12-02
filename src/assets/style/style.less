@@ -1,6 +1,6 @@
 @import "font.css";
 @import "color-style.css";
-@import "components/style-headAccueil.css";
+@import "components/style-accueil.css";
 
 
 /* Navigation */
@@ -9,10 +9,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
-
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+}
 
 nav, #burger {
   display: flex;
@@ -177,9 +179,6 @@ ul {
 /* footer */
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 

@@ -47,9 +47,8 @@
       </nav>
     </header>
 
-    <div class="growth">
+
       <router-view/>
-    </div>
 
     <footer>
       <div class="footer-cat">
@@ -151,7 +150,7 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 

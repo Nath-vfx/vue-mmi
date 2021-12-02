@@ -76,8 +76,10 @@ const routes = [
     path: '/politique-confidentialite',
     name: 'PolitiqueConfidentialite',
     component: PolitiqueConfidentialite
-  }
+  },
+    /*Composants*/
 ]
+
 
 const router = new VueRouter({
   mode: 'history',
