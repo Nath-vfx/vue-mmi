@@ -126,13 +126,8 @@
 </template>
 
 <script>
-import test from '@/components/test'
-/* eslint-disable */
 export default {
   name: 'Accueil',
-  components: {
-    test
-  },
   data() {
     return {
       msg: 'Ceci est la page d\'accueil'
