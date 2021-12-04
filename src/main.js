@@ -2,10 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import enteteComponent from '@/components/entete.component'
-
-Vue.component('enteteComponent', enteteComponent)
-
 Vue.config.productionTip = false
 
 new Vue({
