@@ -1,17 +1,13 @@
 <template>
 <div>
-  <h1>{{msg}}</h1>
 </div>
 </template>
 
 <script>
+
+/* eslint-disable */
 export default {
   name: "Departement",
-  data () {
-    return {
-      msg: 'Page sur le Departement'
-    }
-  }
 }
 </script>
 
