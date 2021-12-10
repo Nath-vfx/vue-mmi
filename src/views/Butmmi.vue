@@ -1,7 +1,7 @@
 <template>
   <div id="page-but">
     <div>
-      <h3>Programme <span>Pédagogique</span></h3>
+      <h3>Programme <br><span>Pédagogique</span></h3>
 
       <p>Le BUT MMI est une formation pluridisciplinaire qui s’articule autour de trois axes fondamentaux : le design,
         le
@@ -12,7 +12,7 @@
         alternance et de poursuivre en licence.</p>
     </div>
     <div>
-      <h3>Postuler <span>au BUT MMI</span></h3>
+      <h3>Postuler <br><span>au BUT MMI</span></h3>
       <p><span>PROFILS :</span>
         Notre formation est ouverte à tous les profils d’étudiants. Que vous veniez de l’enseignement secondaire,
         d’autres filières universitaires ou que vous souhaitiez opérer une reconversion professionnelle, vous êtes le
@@ -68,26 +68,26 @@ button {
 #bouton {
   text-align: center;
 }
-
-div p {
-  font-family: Lato, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+div {
+  p {
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #9A9A9A;
+    span {
+      font-size: 6.4rem;
+      font-weight: 600;
+      background: -webkit-linear-gradient(
+          0deg, #55f2d6 16%, #e389e5 78%);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
 }
-
-div h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3.2rem;
-  font-weight: 400;
-  color: #9A9A9A;
-
-}
-
-div h3 span {
-  font-size: 6.4rem;
-  font-weight: 600;
-}
-
-
 
 </style>
