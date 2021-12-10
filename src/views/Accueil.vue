@@ -115,7 +115,7 @@
             alt="">
       </div>
       <div>
-        <h3>Nos <span>actualités</span></h3>
+        <h3>Nos <br><span>actualités</span></h3>
       </div>
       <div>
         <h3>Nous <span>contacter</span></h3>
