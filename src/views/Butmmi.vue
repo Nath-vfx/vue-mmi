@@ -52,10 +52,6 @@ export default {
 
 <style scoped lang="less">
 
-#page-but {
-  height: 3052px;
-}
-
 button {
   outline: none;
   border: none;
