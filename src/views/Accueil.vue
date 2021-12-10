@@ -118,23 +118,24 @@
         <h3>Nos <br><span>actualités</span></h3>
       </div>
       <div>
-        <h3>Nous <span>contacter</span></h3>
-        <h4>DÉPARTEMENT MÉTIERS DU MULTIMÉDIA
-          & DE L'INTERNET DE <span>MONTBÉLIARD</span></h4>
-        <ul>
-          <li>4, place Tharradin <br>
-            25 200 Montbéliard
-          </li>
-          <li>Tél. +33 (0)3 81 99 47 34
-          </li>
-          <li>Mail DUT MMI : <br>
-            dut-mmi-montbeliard@univ-fcomte.fr
-          </li>
-          <li>
-            Mail Licence pro Webdesign : <br>
-            lp-wd-montbeliard@univ-fcomte.fr
-          </li>
-        </ul>
+        <h3>Nous <br><span>contacter</span></h3>
+        <aside>
+          <h4>DÉPARTEMENT MÉTIERS DU MULTIMÉDIA & DE L'INTERNET DE <span>MONTBÉLIARD</span></h4>
+          <ul>
+            <li>4, place Tharradin <br>
+              25 200 Montbéliard
+            </li>
+            <li>Tél. +33 (0)3 81 99 47 34
+            </li>
+            <li>Mail DUT MMI : <br>
+              dut-mmi-montbeliard@univ-fcomte.fr
+            </li>
+            <li>
+              Mail Licence pro Webdesign : <br>
+              lp-wd-montbeliard@univ-fcomte.fr
+            </li>
+          </ul>
+        </aside>
       </div>
     </div>
   </div>

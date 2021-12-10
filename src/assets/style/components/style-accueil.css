@@ -1,3 +1,6 @@
+#accueil button {
+  cursor: pointer;
+}
 #accueil main {
   margin-top: -25px;
   min-height: 730px;
@@ -11,9 +14,10 @@
   font-weight: 500;
 }
 #accueil main section {
-  padding-left: 1em;
+  padding-left: 3em;
 }
 #accueil main section h1 {
+  padding-top: 6rem;
   font-size: 3.2rem;
 }
 #accueil main section h2 {
@@ -25,6 +29,7 @@
 }
 #accueil main aside {
   padding-left: 60px;
+  margin-top: 6em;
 }
 #accueil main aside button {
   outline: none;
@@ -35,7 +40,6 @@
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  cursor: pointer;
 }
 #accueil main aside button:nth-child(2) {
   background-color: rgba(11, 74, 197, 0.7);
@@ -44,6 +48,7 @@
 #accueil main div {
   display: flex;
   height: 200px;
+  margin-top: 6em;
 }
 #accueil main div ul {
   display: flex;
@@ -117,5 +122,34 @@
 }
 #content div:nth-child(4) {
   text-align: center;
+}
+#content div:nth-child(5) {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+#content div:nth-child(5) h3 {
+  width: 50%;
+  margin-left: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#content div:nth-child(5) aside {
+  width: 50%;
+  font-size: 2rem;
+  padding-left: 60px;
+  border-left: 1px solid black;
+}
+#content div:nth-child(5) aside ul li {
+  padding-top: 20px;
+}
+#content div:nth-child(5) aside h4 {
+  font-size: 2.5rem;
+}
+#content div:nth-child(5) aside h4 span {
+  font-size: 3.1rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style-accueil.css.map */
