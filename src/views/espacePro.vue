@@ -1,8 +1,30 @@
 <template>
 <div>
-  <h1>
-    {{msg}}
-  </h1>
+<!--  <h1>-->
+<!--    {{msg}}-->
+<!--  </h1>-->
+  <div class="stage">
+    <h3>Nous vous <span>intéressons ?</span></h3>
+    <p>Afin de valider leur quatrième semestre et obtenir leur diplôme, nos étudiants doivent effectuer un stage de 12 semaines en milieu professionnel (pour les DUT) ou de 16 semaines (pour les Licences Professionnelles en formation initiale). Ils mettent en pratique l'ensemble leurs savoirs acquis durant la formation. Leur travail se développe dans un large champ d’action, de la start-up à l’entreprise plus traditionnelle en passant par les agences de communication digitale ou les associations régionales.
+
+      Si leurs projets ont retenu votre attention, n’hésitez pas à nous soumettre vos offres grâce à notre formulaire.</p>
+    <a href=""><button>Déposer une offre</button></a>
+  </div>
+  <div class="alternance">
+    <h3>Le choix de <span>l'alternance</span></h3>
+    <p>Vous pouvez également accueillir un étudiant de licence professionnelle webdesign en apprentissage. La licence professionnelle en alternance est conçue pour une immersion importante en entreprise. Son rythme est pensé sur 2 semaines : 10 jours en entreprise, 3 jours au département. Sauf condition particulière, les congés sont de 5 semaines.
+
+      N’hésitez plus… Contactez-nous pour adopter un apprenti !</p>
+    <a href=""><button>Déposer une offre</button></a>
+  </div>
+  <div class="projet">
+    <h3>Un projet ? <span>Une application ?</span></h3>
+    <p>Vous pouvez également accueillir un étudiant de licence professionnelle webdesign en apprentissage. La licence professionnelle en alternance est conçue pour une immersion importante en entreprise. Son rythme est pensé sur 2 semaines : 10 jours en entreprise, 3 jours au département. Sauf condition particulière, les congés sont de 5 semaines.
+
+      N’hésitez plus… Contactez-nous pour adopter un apprenti !</p>
+    <a href=""><button>Proposer un projet</button></a>
+  </div>
+
 </div>
 </template>
 
@@ -17,6 +39,30 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
+h3{
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #9A9A9A;
+  span {
+    font-size: 6.4rem;
+    font-weight: 600;
+  }
+}
+.alternance {
+  background-color: #EEEEEE ;
+}
+ button{
+   font-family: 'Poppins', sans-serif;
+   font-weight: initial;
+   border-color: transparent;
+   background-color: #FFFFFF;
+   box-shadow: 0 0 8px #9A9A9A;
+ }
+ a{
+   display: flex;
+   justify-content: right;
+   text-align: right;
+ }
 
 </style>
