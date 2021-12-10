@@ -31,17 +31,46 @@ const routes = [
   {
     path: '/actualites',
     name: 'Actualites',
-    component: Actualites
+    component: Actualites,
+    meta: {
+      noHeading: false,
+      data: {
+        titles: [{mainProname: 'Les', mainTitle: 'Actualités', mainText: 'Retrouvez les informations\n' +
+              'complètes et à jour du département\n'}],
+        mainBackground: {
+          background: 'url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)'
+        }
+      }
+    }
   },
   {
     path: '/espace-pro',
     name: 'espacePro',
-    component: espacePro
+    component: espacePro,
+    meta: {
+      noHeading: false,
+      data: {
+        titles: [{mainProname: 'Espace', mainTitle: 'Professionnel', mainText: 'Nos étudiants ont de l’avenir et du talent\n' +
+              'complètes et à jour du département\n'}],
+        mainBackground: {
+          background: 'url(https://images.unsplash.com/photo-1639054098022-49f836a42e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)'
+        }
+      }
+    }
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: Contact,
+    meta: {
+      noHeading: false,
+      data: {
+        titles: [{mainProname: 'Nous', mainTitle: 'Contacter', mainText: 'Contactez-nous pour rejoindre la communauté MMI\n'}],
+        mainBackground: {
+          background: 'url(https://images.unsplash.com/photo-1639054098022-49f836a42e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)'
+        }
+      }
+    }
   },
   {
     path: '/mobilite',

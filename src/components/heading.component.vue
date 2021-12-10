@@ -55,10 +55,14 @@ main {
         font-size: 3.2rem;
         position: relative;
 
+
         span {
           font-weight: 700;
           font-size: 9.6rem;
           position: absolute;
+          background:-webkit-linear-gradient(0deg, rgba(85,242,214,1) 16%, rgba(227,137,229,1) 78%);
+          -webkit-background-clip: text;
+          color:transparent;
         }
       }
     }
