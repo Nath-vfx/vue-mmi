@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="page-but">
     <div>
       <h3>Programme <span>Pédagogique</span></h3>
 
@@ -13,7 +13,7 @@
     </div>
     <div>
       <h3>Postuler <span>au BUT MMI</span></h3>
-      <p>PROFILS :
+      <p><span>PROFILS :</span>
         Notre formation est ouverte à tous les profils d’étudiants. Que vous veniez de l’enseignement secondaire,
         d’autres filières universitaires ou que vous souhaitiez opérer une reconversion professionnelle, vous êtes le
         bienvenu.
@@ -22,11 +22,11 @@
         formation. Il est cependant recommandé d'avoir une bonne pratique de l'outil informatique.
       </p>
       <p>
-        INSCRIPTION :
+        <span>INSCRIPTION :</span>
         Pour s’inscrire, il est indispensable de constituer un dossier de candidature et de valider toutes les étapes du
         processus d'inscription préalable sur parcoursup.fr.</p>
       <a href="">
-        <button>Déposer une offre</button>
+        <div id="bouton"><button>Déposer une candidature</button></div>
       </a>
     </div>
   </div>
@@ -51,5 +51,43 @@ export default {
 </script>
 
 <style scoped lang="less">
+
+#page-but {
+  height: 3052px;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+  padding: 0.5em 1.5em;
+
+}
+
+#bouton {
+  text-align: center;
+}
+
+div p {
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+div h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #9A9A9A;
+
+}
+
+div h3 span {
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+
 
 </style>
