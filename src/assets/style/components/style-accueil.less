@@ -1,4 +1,7 @@
 #accueil {
+  button {
+    cursor: pointer;
+  }
   main {
     margin-top: -25px;
     min-height: 730px;
@@ -13,8 +16,9 @@
     }
 
     section {
-      padding-left: 1em;
+      padding-left: 3em;
       h1 {
+        padding-top: 6rem;
         font-size: 3.2rem;
       }
 
@@ -30,6 +34,7 @@
 
     aside {
       padding-left: 60px;
+      margin-top: 6em;
       button {
         outline: none;
         border: none;
@@ -39,7 +44,6 @@
         font-family: Lato, sans-serif;
         font-weight: 400;
         font-size: 1.6rem;
-        cursor: pointer;
       }
 
       button:nth-child(2) {
@@ -51,6 +55,7 @@
     div {
       display: flex;
       height: 200px;
+      margin-top: 6em;
       ul {
         display: flex;
         flex-grow: 1;
@@ -101,6 +106,9 @@
     width: 30%;
     margin-left: 40px;
   }
+  div:nth-child(2) {
+    margin-top: 6rem;
+  }
   div:nth-child(2), div:nth-child(3) {
     width: 100%;
     display: flex;
@@ -120,6 +128,40 @@
     img{
       width: 50%;
       max-height: 536px;
+    }
+  }
+  div:nth-child(4) {
+    text-align: center;
+  }
+  div:nth-child(5) {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    h3 {
+      width: 50%;
+      margin-left: 30px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    aside {
+      width: 50%;
+      font-size: 2rem;
+      padding-left: 60px;
+      border-left: 1px solid black;
+      ul {
+        li {
+          padding-top: 20px;
+        }
+      }
+      h4 {
+        font-size: 2.5rem;
+        span {
+          font-size: 3.1rem;
+          font-weight: 700;
+        }
+      }
     }
   }
 }
