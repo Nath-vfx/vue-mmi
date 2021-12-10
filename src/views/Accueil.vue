@@ -71,56 +71,71 @@
         </ul>
       </div>
     </main>
-    <div>
-      <h3>BUT <span>MMI</span></h3>
-      <p>Vous former aux métiers du web : tel est l’objectif du BUT MMI (Métiers du Multimédia & d'Internet). En trois
-        ans, vous serez capable de concevoir et de réaliser des produits et services multimédia en ligne.
-      </p>
-      <p>Ce cursus dispensé en formation initiale ou en alternance à partir de la deuxième année permet un accès direct
-        à la vie professionnelle et autorise diverses poursuites d’études.</p>
-      <a href="">
-        <button>Découvrir</button>
-      </a>
-    </div>
-    <div>
-      <h3>Espace <span>Professionnel</span></h3>
-      <p>Vous avez un projet ? Vous cherchez un stagiaire ? Proposez vos offres aux étudiants. Ils seront ravis de
-        collaborer avec vous.
-      </p>
-      <a href="">
-        <button>Déposer une offre</button>
-      </a>
-      <img src="" alt="">
-    </div>
-    <div>
-      <h3>Mobilité <span>Internationale</span></h3>
-      <p>Notre BUT offre aux étudiants la possibilité de suivre un semestre complet à l'étranger dans des CÉGEP (collège
-        d'enseignement général et professionnel) partenaires au Canada.
-      </p>
-      <p>Le stage de fin d'études est également l'occasion de tenter la mobilité internationale.</p>
-      <a href=""><button>Découvrir</button></a>
-    </div>
-    <div>
-      <h3>Nos <span>actualités</span></h3>
-    </div>
-    <div>
-      <h3>Nous <span>contacter</span></h3>
-      <h4>DÉPARTEMENT MÉTIERS DU MULTIMÉDIA
-        & DE L'INTERNET DE <span>MONTBÉLIARD</span></h4>
-      <ul>
-        <li>4, place Tharradin <br>
-          25 200 Montbéliard
-        </li>
-        <li>Tél. +33 (0)3 81 99 47 34
-        </li>
-        <li>Mail DUT MMI : <br>
-          dut-mmi-montbeliard@univ-fcomte.fr
-        </li>
-        <li>
-          Mail Licence pro Webdesign : <br>
-          lp-wd-montbeliard@univ-fcomte.fr
-        </li>
-      </ul>
+    <div id="content">
+      <div>
+        <h3>BUT <span>MMI</span></h3>
+        <p>Vous former aux métiers du web : tel est l’objectif du BUT MMI (Métiers du Multimédia & d'Internet). En trois
+          ans, vous serez capable de concevoir et de réaliser des produits et services multimédia en ligne.
+        </p>
+        <p>Ce cursus dispensé en formation initiale ou en alternance à partir de la deuxième année permet un accès
+          direct
+          à la vie professionnelle et autorise diverses poursuites d’études.</p>
+        <a href="">
+          <button>Découvrir</button>
+        </a>
+      </div>
+      <div>
+        <img
+            src="https://images.unsplash.com/photo-1639052558054-12ab3029d10d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt="">
+        <aside>
+          <h3>Espace <br><span>Professionnel</span></h3>
+          <p>Vous avez un projet ? Vous cherchez un stagiaire ? Proposez vos offres aux étudiants. Ils seront ravis de
+            collaborer avec vous.
+          </p>
+          <a href="">
+            <button>Déposer une offre</button>
+          </a>
+        </aside>
+      </div>
+      <div>
+        <aside>
+          <h3>Mobilité <br><span>Internationale</span></h3>
+          <p>Notre BUT offre aux étudiants la possibilité de suivre un semestre complet à l'étranger dans des CÉGEP
+            (collège
+            d'enseignement général et professionnel) partenaires au Canada.
+          </p>
+          <p>Le stage de fin d'études est également l'occasion de tenter la mobilité internationale.</p>
+          <a href="">
+            <button>Découvrir</button>
+          </a>
+        </aside>
+        <img
+            src="https://images.unsplash.com/photo-1638984849686-c4d36d202b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt="">
+      </div>
+      <div>
+        <h3>Nos <span>actualités</span></h3>
+      </div>
+      <div>
+        <h3>Nous <span>contacter</span></h3>
+        <h4>DÉPARTEMENT MÉTIERS DU MULTIMÉDIA
+          & DE L'INTERNET DE <span>MONTBÉLIARD</span></h4>
+        <ul>
+          <li>4, place Tharradin <br>
+            25 200 Montbéliard
+          </li>
+          <li>Tél. +33 (0)3 81 99 47 34
+          </li>
+          <li>Mail DUT MMI : <br>
+            dut-mmi-montbeliard@univ-fcomte.fr
+          </li>
+          <li>
+            Mail Licence pro Webdesign : <br>
+            lp-wd-montbeliard@univ-fcomte.fr
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

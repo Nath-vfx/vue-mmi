@@ -66,6 +66,9 @@
 #accueil div h3 span {
   font-size: 6.4rem;
   font-weight: 600;
+  background: -webkit-linear-gradient(0deg, #55f2d6 16%, #e389e5 78%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 #accueil div a button {
   outline: none;
@@ -78,5 +81,35 @@
   font-family: Lato, sans-serif;
   font-weight: 500;
   font-size: 18px;
+}
+#content div:nth-child(1) {
+  width: 30%;
+  margin-left: 40px;
+}
+#content div:nth-child(2),
+#content div:nth-child(3) {
+  width: 100%;
+  display: flex;
+}
+#content div:nth-child(2) aside,
+#content div:nth-child(3) aside {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#content div:nth-child(2) aside *:not(span),
+#content div:nth-child(3) aside *:not(span) {
+  margin-left: 30px;
+  margin-right: 60px;
+}
+#content div:nth-child(2) aside a,
+#content div:nth-child(3) aside a {
+  margin-top: 3rem;
+  text-align: right;
+}
+#content div:nth-child(2) img,
+#content div:nth-child(3) img {
+  width: 50%;
+  max-height: 536px;
 }
 /*# sourceMappingURL=style-accueil.css.map */
