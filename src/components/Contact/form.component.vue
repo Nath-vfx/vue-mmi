@@ -1,13 +1,9 @@
 <template>
-<<<<<<< HEAD
   <div>
     <form action="">
 
     </form>
   </div>
-=======
-
->>>>>>> Elolo
 </template>
 
 <script>
