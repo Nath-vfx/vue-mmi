@@ -1,15 +1,13 @@
 <template>
   <div>
-    <h1>{{ msg }}</h1>
-
     <div class="main">
-      <img src="" alt="">
+      <img src="https://cdn.pixabay.com/photo/2021/12/07/14/00/river-6853339_960_720.jpg" alt="">
       <h3>Journée Portes Ouvertes 2022</h3>
       <time datetime="2022-01-29">29 Janvier 2022</time>
     </div>
 
     <aside>
-      <img src="" alt="">
+      <img src="https://cdn.pixabay.com/photo/2021/12/06/10/55/hamburg-6849995_960_720.jpg" alt="">
       <h3>Remise des diplômes</h3>
       <time datetime="2022-06-29">29 Juin 2022</time>
     </aside>
@@ -18,19 +16,19 @@
 
     <ul class="articles">
       <li>
-        <img src="#" alt="">
+        <img src="https://cdn.pixabay.com/photo/2021/01/25/22/45/leaves-5949884__340.png" alt="">
         <time datetime="2021-11-07">7 Novembre 2021</time>
         <h4>Lorem ipsum</h4>
         <p>Lorem ipsum</p>
       </li>
       <li>
-        <img src="#" alt="">
+        <img src="https://cdn.pixabay.com/photo/2017/05/13/17/31/leaf-2310212__180.jpg" alt="">
         <time datetime="2021-11-08">8 Novembre 2021</time>
         <h4>Lorem ipsum</h4>
         <p>Lorem ipsum</p>
       </li>
       <li>
-        <img src="#" alt="">
+        <img src="https://cdn.pixabay.com/photo/2019/01/09/14/13/leaves-3923413__180.jpg" alt="">
         <time datetime="2021-11-09">9 Novembre 2021</time>
         <h4>Lorem ipsum</h4>
         <p>Lorem ipsum</p>
@@ -51,5 +49,24 @@ export default {
 </script>
 
 <style scoped>
+
+.main img {
+  position: absolute;
+  width: 50%;
+}
+.main h3, time{
+  position: relative;
+
+}
+.main h3{
+  background-color: #FFFFFF;
+  font-family: "Poppins Medium", sans-serif;
+  font-size: 2.0rem;
+}
+.main time {
+  color: #FFFFFF;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem ;
+}
 
 </style>
