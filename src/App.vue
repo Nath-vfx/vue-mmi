@@ -46,40 +46,50 @@
 
       </nav>
     </header>
-    <template v-if="!this.$route.meta.noHeading">
-      <heading-component
-          v-for="(title, index) in getMetaData.titles"
-          :main-proname="title.mainProname"
-          :main-title="title.mainTitle"
-          :main-text="title.mainText"
-          :key="index"
-          :style="getMetaData.mainBackground"/>
-    </template>
-    <router-view/>
+    <transition name="fade" mode="out-in">
+      <router-view class="router-view"/>
+    </transition>
+
     <footer>
       <div class="footer-cat">
         <h1>MMi <br> Montbéliard</h1>
         <div class="footer-cat-column">
           <h5>La formation</h5>
           <ul>
-            <li><router-link to="/but-mmi">But MMi</router-link></li>
-            <li><router-link to="/licence-pro">Licence Pro</router-link></li>
-            <li><router-link to="/mobilite">Mobilité <br>Internationale</router-link></li>
+            <li>
+              <router-link to="/but-mmi">But MMi</router-link>
+            </li>
+            <li>
+              <router-link to="/licence-pro">Licence Pro</router-link>
+            </li>
+            <li>
+              <router-link to="/mobilite">Mobilité <br>Internationale</router-link>
+            </li>
           </ul>
         </div>
         <div class="footer-cat-column">
           <h5>A propos</h5>
           <ul>
-            <li><router-link to="/mentions-legales">Mentions légales</router-link></li>
-            <li><router-link to="/cgu">CGU</router-link></li>
-            <li><router-link to="/politique-confidentialite">Politique de <br>confidentialités</router-link></li>
+            <li>
+              <router-link to="/mentions-legales">Mentions légales</router-link>
+            </li>
+            <li>
+              <router-link to="/cgu">CGU</router-link>
+            </li>
+            <li>
+              <router-link to="/politique-confidentialite">Politique de <br>confidentialités</router-link>
+            </li>
           </ul>
         </div>
         <div class="footer-cat-column">
           <h5>La formation</h5>
           <ul>
-            <li><router-link to="/contact">Nous Contacter</router-link></li>
-            <li><router-link to="/espace-pro">Espace Pro</router-link></li>
+            <li>
+              <router-link to="/contact">Nous Contacter</router-link>
+            </li>
+            <li>
+              <router-link to="/espace-pro">Espace Pro</router-link>
+            </li>
           </ul>
         </div>
       </div>
@@ -145,9 +155,15 @@
       </div>
       <div id="bottom-footer">
         <ul>
-          <li><router-link to="/politique-confidentialite">Politique de confidentialité</router-link></li>
-          <li><router-link to="/mentions-legales">Mentions légales</router-link></li>
-          <li><router-link to="/cgu">CGU</router-link></li>
+          <li>
+            <router-link to="/politique-confidentialite">Politique de confidentialité</router-link>
+          </li>
+          <li>
+            <router-link to="/mentions-legales">Mentions légales</router-link>
+          </li>
+          <li>
+            <router-link to="/cgu">CGU</router-link>
+          </li>
         </ul>
       </div>
     </footer>
@@ -155,25 +171,22 @@
 </template>
 
 <script>
-import headingComponent from '@/components/heading.component'
+
 
 export default {
   name: 'App',
   components: {
-    headingComponent
+    /*headingComponent*/
   },
   mounted() {
     console.log(this.$route, !this.$route.meta.noHeading)
   },
-  computed: {
-    getMetaData(){
-      return this.$route.meta.data;
-    }
-  }
 }
 </script>
 
-<style lang="less">
+<style>
+
 @import "assets/style/style.css";
+
 
 </style>

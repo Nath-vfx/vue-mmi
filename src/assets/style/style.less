@@ -313,3 +313,24 @@ footer .logoUniv {
   transform: scale(1.5);
   margin: 0 1em;
 }
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  transform: translateX(2em);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .3s ease;
+}
+
+#app {
+  width: 100vw;
+}
+
+.router-view {
+  max-width: 1920px;
+  @media screen and (min-width: 1920px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

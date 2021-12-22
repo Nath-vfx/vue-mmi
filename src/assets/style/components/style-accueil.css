@@ -53,7 +53,7 @@
 #accueil main div ul {
   display: flex;
   flex-grow: 1;
-  align-items: end;
+  align-items: flex-end;
   padding-left: 20px;
 }
 #accueil main div ul li {

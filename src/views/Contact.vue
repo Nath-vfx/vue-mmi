@@ -1,51 +1,27 @@
 <template>
-  <div>
-    <div class="rencontre">
-      <h3>Nous <span>Rencontrer</span></h3>
-      <p class="sous-titre">Avant une inscription au département MMI de l'IUT de Belfort-Montbéliard, une visite
-        s'impose
-        !</p>
-      <aside>
-        <div class="forums-etudiants">
-          <h4>FORUMS ÉTUDIANTS</h4>
-          <p>Notre département vient également à votre rencontre chaque année, lors des forums organisés par le SCUIO.
-            Ce périple nous conduit de Vesoul/Lure à Montbéliard/Belfort/Sevenans, en passant par Pontarlier et
-            Besançon.
-            Vous serez conviés et transportés jusqu’à ces forums par votre lycée.
-
-            <br> Sur place, nous vous présenterons la formation et les réalisations des étudiants. Vous serez accueillis
-            par des étudiants et des enseignants du département MMI Montbéliard avec lesquels vous pourrez échanger et
-            partager votre passion pour les nouvelles technologies de l'information et de la communication.
-
-          </p>
-        </div>
-        <div class="JPO">
-          <h4>JOURNÉE PORTES OUVERTES</h4>
-          <p>Chaque année, une journée "Portes ouvertes" propose non seulement une visite de nos locaux, mais aussi et
-            surtout une rencontre avec les étudiants et les enseignants du département. Chacun pourra ainsi se faire une
-            idée précise de notre formation.
-
-            Par ailleurs, les responsables du département MMI sont évidemment à votre disposition pour répondre à toutes
-            vos demandes de renseignements.</p>
-        </div>
-      </aside>
-    </div>
-    <formComponent></formComponent>
-  </div>
+<div>
+  <heading-component
+      v-for="(title, index) in getMetaData.titles"
+      :main-proname="title.mainProname"
+      :main-title="title.mainTitle"
+      :main-text="title.mainText"
+      :key="index"
+      :style="getMetaData.mainBackground"/>
+</div>
 </template>
 
 <script>
-import formComponent from "../../src/components/Contact/form.component"
+import headingComponent from '@/components/heading.component'
 
-
+/* eslint-disable */
 export default {
-  name: "Contact",
+  name: "Departement",
   components: {
-    formComponent
+    headingComponent
   },
-  data() {
-    return {
-      msg: 'Page de contact'
+  computed: {
+    getMetaData() {
+      return this.$route.meta.data;
     }
   }
 }

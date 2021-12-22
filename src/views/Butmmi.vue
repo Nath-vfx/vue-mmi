@@ -1,5 +1,13 @@
 <template>
   <div id="page-but">
+    <heading-component
+        v-for="(title, index) in getMetaData.titles"
+        :main-proname="title.mainProname"
+        :main-title="title.mainTitle"
+        :main-text="title.mainText"
+        :key="index"
+        :style="getMetaData.mainBackground"/>
+
     <div class="programme">
       <h3>Programme <br><span>Pédagogique</span></h3>
 
@@ -11,7 +19,7 @@
         Canada. Nous facilitons l’insertion professionnelle en offrant la possibilité de réaliser la seconde année en
         alternance et de poursuivre en licence.</p>
     </div>
-    <ul>
+    <ul id="poles-cat">
       <li>
         <div class="titre-poles-dvp">
           <svg></svg>
@@ -68,18 +76,17 @@
 </template>
 
 <script>
+import headingComponent from '@/components/heading.component'
+
+/* eslint-disable */
 export default {
-  name: "Butmmi",
-  data() {
-    return {
-      titles: [{
-        mainProname: 'Le',
-        mainTitle: 'BUT MMI',
-        mainText: 'À la découverte de la formation MMI à travers les différents pôles'
-      }],
-      mainBackground: {
-        background: 'url(https://images.unsplash.com/photo-1588522943401-6ba285f692de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80)'
-      }
+  name: "ButMMi",
+  components: {
+    headingComponent
+  },
+  computed: {
+    getMetaData() {
+      return this.$route.meta.data;
     }
   }
 }
@@ -133,6 +140,7 @@ a {
     padding-bottom: 50px;
   }
 }
+
 .titre-poles-com {
   font-family: 'Poppins', sans-serif;
   font-size: 3.6rem;
@@ -148,6 +156,7 @@ a {
   font-size: 1.8rem;
   color: #FFFFFF;
   width: 80%;
+  height: 220px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -166,6 +175,7 @@ a {
   font-size: 1.8rem;
   color: #FFFFFF;
   width: 80%;
+  height: 220px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -184,6 +194,7 @@ a {
   font-size: 1.8rem;
   color: #FFFFFF;
   width: 80%;
+  height: 220px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -194,11 +205,14 @@ h5 {
   text-align: left;
   margin-left: 45px;
 }
-ul {
+#poles-cat {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-bottom: 100px;
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
 }
 li {
   width: 500px;

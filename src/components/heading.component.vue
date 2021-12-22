@@ -1,17 +1,16 @@
 <template>
-  <div>
-    <main>
-      <aside>
-        <div>
-          <h1>{{ mainProname }} <br> <span><nobr>{{ mainTitle }}</nobr></span></h1>
-        </div>
-        <div>
-          <p>{{ mainText }}</p>
-        </div>
-
-      </aside>
-    </main>
-  </div>
+    <div v-if="show">
+      <main>
+        <aside>
+          <div>
+            <h1>{{ mainProname }} <br> <span><nobr>{{ mainTitle }}</nobr></span></h1>
+          </div>
+          <div>
+            <p>{{ mainText }}</p>
+          </div>
+        </aside>
+      </main>
+    </div>
 </template>
 
 <script>
@@ -28,7 +27,12 @@ export default {
     mainText: {
       default: 'Le text de description de la page doit apparaître ici !'
     }
-  }
+  },
+  data() {
+    return {
+      show:true
+    }
+  },
 }
 </script>
 
@@ -49,6 +53,7 @@ main {
     div:first-child {
       flex-grow: 6;
       align-items: flex-end;
+
       h1 {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
@@ -60,19 +65,22 @@ main {
           font-weight: 700;
           font-size: 9.6rem;
           position: absolute;
-          background:-webkit-linear-gradient(0deg, rgba(85,242,214,1) 16%, rgba(227,137,229,1) 78%);
+          background: -webkit-linear-gradient(0deg, rgba(85, 242, 214, 1) 16%, rgba(227, 137, 229, 1) 78%);
           -webkit-background-clip: text;
-          color:transparent;
+          color: transparent;
         }
       }
     }
+
     div {
       display: flex;
     }
+
     div:last-child {
       margin-top: 3em;
       align-items: center;
       flex-grow: 3;
+
       p {
         font-family: Lato, sans-serif;
         font-weight: normal;

@@ -1,5 +1,12 @@
 <template>
   <div id="international">
+    <heading-component
+        v-for="(title, index) in getMetaData.titles"
+        :main-proname="title.mainProname"
+        :main-title="title.mainTitle"
+        :main-text="title.mainText"
+        :key="index"
+        :style="getMetaData.mainBackground"/>
     <div class="first-international">
       <div>
         <h3><span>Partir en stage</span></h3>
@@ -60,8 +67,19 @@
 </template>
 
 <script>
+import headingComponent from '@/components/heading.component'
+
+/* eslint-disable */
 export default {
   name: "Mobilite",
+  components: {
+    headingComponent
+  },
+  computed: {
+    getMetaData() {
+      return this.$route.meta.data;
+    }
+  }
 }
 </script>
 
@@ -114,7 +132,8 @@ h3:not(:nth-child(1)) {
     display: flex;
     align-items: center;
     img {
-      max-width: 50vw;
+      width: 50vw;
+      max-width: 960px;
     }
     div:nth-child(1){
       margin: 0 80px;

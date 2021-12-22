@@ -1,8 +1,13 @@
 <template>
   <div>
-    <!--  <h1>-->
-    <!--    {{msg}}-->
-    <!--  </h1>-->
+
+    <heading-component
+        v-for="(title, index) in getMetaData.titles"
+        :main-proname="title.mainProname"
+        :main-title="title.mainTitle"
+        :main-text="title.mainText"
+        :key="index"
+        :style="getMetaData.mainBackground"/>
     <div class="stage">
       <h3>Nous vous <br><span>intéressons ?</span></h3>
       <p>Afin de valider leur quatrième semestre et obtenir leur diplôme, nos étudiants doivent effectuer un stage de 12
@@ -52,11 +57,17 @@
 </template>
 
 <script>
+import headingComponent from '@/components/heading.component'
+
+/* eslint-disable */
 export default {
   name: "espacePro",
-  data() {
-    return {
-      msg: 'Espace Pro'
+  components: {
+    headingComponent
+  },
+  computed: {
+    getMetaData() {
+      return this.$route.meta.data;
     }
   }
 }
