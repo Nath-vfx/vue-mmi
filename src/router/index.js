@@ -21,19 +21,26 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    meta: {noHeading: true}
   },
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: About,
+    meta: {
+      data: {
+        titles: [{mainProname: 'A', mainTitle: 'Propos', mainText: 'Notre équipe'}],
+        mainBackground: {
+          background: 'url(https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)'
+        }
+      }
+    }
+
   },
   {
     path: '/actualites',
     name: 'Actualites',
     component: Actualites,
     meta: {
-      noHeading: false,
       data: {
         titles: [{mainProname: 'Les', mainTitle: 'Actualités', mainText: 'Retrouvez les informations\n' +
               'complètes et à jour du département\n'}],
@@ -48,7 +55,6 @@ const routes = [
     name: 'espacePro',
     component: espacePro,
     meta: {
-      noHeading: false,
       data: {
         titles: [{mainProname: 'Espace', mainTitle: 'Professionnel', mainText: 'Nos étudiants ont de l’avenir et du talent\n' +
               'complètes et à jour du département\n'}],
@@ -63,7 +69,6 @@ const routes = [
     name: 'Contact',
     component: Contact,
     meta: {
-      noHeading: false,
       data: {
         titles: [{mainProname: 'Nous', mainTitle: 'Contacter', mainText: 'Contactez-nous pour rejoindre la communauté MMI\n'}],
         mainBackground: {
@@ -77,7 +82,6 @@ const routes = [
     name: 'Mobilite',
     component: mobiliteInternationale,
     meta: {
-      noHeading: false,
       data: {
         titles: [{mainProname: 'Mobilité', mainTitle: 'Internationale', mainText: 'Représente ta formation à l\'internationale'}],
         mainBackground: {
@@ -91,7 +95,6 @@ const routes = [
     name: 'Butmmi',
     component: Butmmi,
     meta: {
-      noHeading: false,
       data: {
         titles: [{mainProname: 'Le', mainTitle: 'BUT MMI', mainText: 'À la découverte de la formation MMI à travers les différents pôles'}],
         mainBackground: {
@@ -105,7 +108,6 @@ const routes = [
     name: 'Departement',
     component: Departement,
     meta: {
-      noHeading: false,
       data: {
         titles: [{mainProname: 'Le', mainTitle: 'Département', mainText: 'Métiers du multimédia et de l’internet'}],
         mainBackground: {
