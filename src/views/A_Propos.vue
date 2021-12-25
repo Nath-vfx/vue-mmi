@@ -76,7 +76,7 @@ export default {
 
 <style lang="less" scoped>
 .about {
-  background: linear-gradient(0deg, rgba(241,241,241,1) 40%, rgba(255,255,255,1) 40%);
+  background: linear-gradient(0deg, rgba(241,241,241,1) 45%, rgba(255,255,255,1) 45%);
 }
 
 .content {
@@ -99,6 +99,9 @@ export default {
     right: 150px;
     bottom: 30px;
   }
+  div:last-child {
+    margin-bottom: 10rem;
+  }
 }
 
 p {
@@ -114,5 +117,9 @@ h3 {
   background: -webkit-linear-gradient(0deg, rgba(85, 242, 214, 1) 16%, rgba(227, 137, 229, 1) 78%);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+img {
+  width: 100vw;
 }
 </style>

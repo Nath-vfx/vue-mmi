@@ -56,8 +56,7 @@ const routes = [
     component: espacePro,
     meta: {
       data: {
-        titles: [{mainProname: 'Espace', mainTitle: 'Professionnel', mainText: 'Nos étudiants ont de l’avenir et du talent\n' +
-              'complètes et à jour du département\n'}],
+        titles: [{mainProname: 'Espace', mainTitle: 'Professionnel', mainText: 'Nos étudiants ont de l’avenir et du talent'}],
         mainBackground: {
           background: 'url(https://images.unsplash.com/photo-1639054098022-49f836a42e43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80)'
         }

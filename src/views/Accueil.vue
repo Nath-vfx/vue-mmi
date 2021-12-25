@@ -8,7 +8,10 @@
       </section>
       <aside>
         <button>Découvrir</button>
-        <button>Espace Pro</button>
+        <router-link to="/espace-pro">
+          <button>Espace Pro</button>
+        </router-link>
+
       </aside>
       <div>
         <ul>

@@ -34,13 +34,11 @@ export default {
 <style lang="less" scoped>
 
 ul {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: max-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+  grid-gap: 5rem;
+  justify-content: center;
   li {
-    margin-left: 50px;
-    margin-right: 50px;
     img {
       width: 200px;
       height: 300px;
@@ -61,6 +59,7 @@ ul {
     h5:after {
       content: url("../../../public/images/dotted-separator.svg");
       position: absolute;
+      width: 1vw;
       left: 60px;
     }
   }
