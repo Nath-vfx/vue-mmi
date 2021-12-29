@@ -64,23 +64,5 @@ export default {
 
 <style scoped>
 
-.main img {
-  position: absolute;
-  width: 50%;
-}
-.main h3, time{
-  position: relative;
-
-}
-.main h3{
-  background-color: #FFFFFF;
-  font-family: "Poppins Medium", sans-serif;
-  font-size: 2.0rem;
-}
-.main time {
-  color: #FFFFFF;
-  font-family: Poppins, sans-serif;
-  font-size: 1.5rem ;
-}
 
 </style>
