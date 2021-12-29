@@ -84,6 +84,7 @@ h3 {
   }
 }
 .rencontres {
+  display: flex;
   @media screen and (max-width: 725px){
     flex-direction: column;
   }
@@ -93,6 +94,8 @@ h3 {
     font-size: 1.8rem;
     line-height: 150%;
     width: 100%;
+    margin: 0 3rem;
+
     h4 {
       text-transform: uppercase;
       font-weight: normal;
