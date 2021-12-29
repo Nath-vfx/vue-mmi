@@ -40,6 +40,7 @@
             de l'Université de Franche-Comté.
           </p>
         </div>
+        <photos_peda-component/>
       </div>
     </div>
     </div>
@@ -48,12 +49,14 @@
 
 <script>
 import headingComponent from '@/components/heading.component'
+import photos_pedaComponent from "@/components/Departement/photos_peda.component";
 
 /* eslint-disable */
 export default {
   name: "Departement",
   components: {
-    headingComponent
+    headingComponent,
+    photos_pedaComponent
   },
   computed: {
     getMetaData() {
