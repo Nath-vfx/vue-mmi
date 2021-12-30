@@ -29,6 +29,13 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
       </div>
+        <div id="actu">
+          <h3>Nos actualités</h3>
+          <div>
+            <news-component/>
+          </div>
+        </div>
+
       <div>
         <h3>L'équipe Pédagogique</h3>
         <div>
@@ -50,13 +57,15 @@
 <script>
 import headingComponent from '@/components/heading.component'
 import photos_pedaComponent from "@/components/Departement/photos_peda.component";
+import newsComponent from "@/components/Actu/news.component";
 
 /* eslint-disable */
 export default {
   name: "Departement",
   components: {
     headingComponent,
-    photos_pedaComponent
+    photos_pedaComponent,
+    newsComponent
   },
   computed: {
     getMetaData() {
@@ -68,7 +77,12 @@ export default {
 
 <style lang="less" scoped>
 #departement {
-
+  #actu {
+    div {
+      margin-left: -10vw;
+      margin-right: -10vw;
+    }
+  }
   h3 {
     font-size: 6.4rem;
     font-weight: 600;
