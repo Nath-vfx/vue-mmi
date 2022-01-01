@@ -1,6 +1,5 @@
 @import "font.css";
 @import "color-style.css";
-@import "components/style-accueil.css";
 
 
 /* Navigation */
@@ -166,6 +165,9 @@ ul {
 
 .underline-toggle {
   border-bottom: solid 2px black;
+  @media screen and (max-width: 725px) {
+    border: none;
+  }
 }
 
 #sous-menu li {

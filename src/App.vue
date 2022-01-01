@@ -24,7 +24,6 @@
             <div id="extra-nav" class="">
               <a href="#" class="extra-nav-entry turnIt" onclick="document.getElementById('sous-menu').classList.toggle('appear');
             document.getElementById('extra-nav').classList.toggle('underline-toggle');
-            document.getElementsByClassName('extra-nav-entry').classList.toggle('turnIt');
             ">Extras</a>
             </div>
             <ul class="appear" id="sous-menu">

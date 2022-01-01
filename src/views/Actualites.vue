@@ -68,6 +68,9 @@ h2, h3 {
   display: flex;
   margin-bottom: 10rem;
   margin-top: 10rem;
+  @media screen and (max-width: 1334px){
+    flex-direction: column;
+  }
 
 
 
@@ -89,6 +92,9 @@ h2, h3 {
         height: 472px;
         object-fit: cover;
         position: relative;
+        @media screen and (max-width: 1334px) {
+          width: 100vw;
+        }
       }
 
       div {
@@ -112,6 +118,9 @@ h2, h3 {
         object-fit: cover;
         position: relative;
         z-index: -1;
+        @media screen and (max-width: 1334px) {
+          width: 100vw;
+        }
       }
 
       div {
