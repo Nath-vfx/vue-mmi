@@ -38,7 +38,7 @@
           l'Université de Franche-Comté.</p>
       </div>
       <div>
-        <img src="../../public/images/dotted-line.svg" alt="Ligne de point">
+        <img src="../../public/images/Decoration/dotted-line.svg" alt="Ligne de point">
       </div>
       <div>
         <h3>Pourquoi ?</h3>
@@ -94,7 +94,7 @@ export default {
     position: relative;
   }
   div:nth-child(4):after {
-    content: url("../../public/images/pine.svg");
+    content: url("../../public/images/Decoration/pine.svg");
     position: absolute;
     right: 150px;
     bottom: 30px;

@@ -2,22 +2,22 @@
 <div>
   <ul>
     <li>
-      <img src="../../../public/images/Nathan-van_bignoot.jpg" alt="Nathan Van Bignoot">
+      <img src="../../../public/images/Team/Nathan-van_bignoot.jpg" alt="Nathan Van Bignoot">
       <h5>Nathan <br><span>Van Bignoot</span></h5>
       <span>Développement</span>
     </li>
     <li>
-      <img src="../../../public/images/Elora-perrin.jpg" alt="Elora Perrin">
+      <img src="../../../public/images/Team/Elora-perrin.jpg" alt="Elora Perrin">
       <h5>Elora <br><span>Perrin</span></h5>
       <span>Communication</span>
     </li>
     <li>
-      <img src="../../../public/images/Eva-bourquin.jpg" alt="Eva Bourquin">
+      <img src="../../../public/images/Team/Eva-bourquin.jpg" alt="Eva Bourquin">
       <h5>Eva <br><span>Bourquin</span></h5>
       <span>Design</span>
     </li>
     <li>
-      <img src="../../../public/images/Tania-andre.jpg" alt="Tania André">
+      <img src="../../../public/images/Team/Tania-andre.jpg" alt="Tania André">
       <h5>Tania <br><span>André</span></h5>
       <span>Design</span>
     </li>
@@ -57,7 +57,7 @@ ul {
       display: block;
     }
     h5:after {
-      content: url("../../../public/images/dotted-separator.svg");
+      content: url("../../../public/images/Decoration/dotted-separator.svg");
       position: absolute;
       width: 1vw;
       left: 60px;

@@ -3,7 +3,7 @@
     <div
         class="heading">
       <h1>Développement</h1>
-      <img src="../../../public/images/squareDev.svg" alt="Carré représentant le développement informatique">
+      <img src="../../../public/images/Pages/Developpement/squareDev.svg" alt="Carré représentant le développement informatique">
     </div>
     <div>
       <div class="flexible">
@@ -18,7 +18,7 @@
           </p>
         </aside>
         <aside>
-          <img src="../../../public/images/computerDev.svg" alt="Ordinateur">
+          <img src="../../../public/images/Pages/Developpement/computerDev.svg" alt="Ordinateur">
         </aside>
       </div>
       <div class="flexible reverse">
@@ -34,7 +34,7 @@
           </p>
         </aside>
         <aside>
-          <img src="../../../public/images/codeDev.svg" alt="Code">
+          <img src="../../../public/images/Pages/Developpement/codeDev.svg" alt="Code">
         </aside>
       </div>
     </div>
@@ -60,7 +60,7 @@ export default {
 
 <style lang="less" scoped>
 #pole {
-  background: url("../../../public/images/dottedLineDev.svg") no-repeat center;
+  background: url("../../../public/images/Pages/Developpement/dottedLineDev.svg") no-repeat center;
 }
 
 h1, h4 {
