@@ -87,6 +87,9 @@ main {
       margin-top: 3em;
       align-items: center;
       flex-grow: 3;
+      @media screen and (max-width: 872px) {
+        width: 100%;
+      }
 
       p {
         @media screen and (max-width: 872px) {

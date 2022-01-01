@@ -24,6 +24,7 @@
         <li>
           <div class="pole dvp">
             <h4>Développement</h4>
+            <router-link to="/pole-developpement">
             <div class="content-pole">
               <h5>Étudier et <br>concevoir...</h5>
               <p>Le développement permet à l’étudiant d’acquérir des compétences techniques dans le web. Ils apprendront
@@ -31,30 +32,35 @@
                 respectant les normes d’accessibilité et les standards web.
               </p>
             </div>
+            </router-link>
 
           </div>
         </li>
         <li>
           <div class="pole com">
             <h4>Communication</h4>
-            <div class="content-pole">
-              <h5>Comprendre et <br>exploiter...</h5>
-              <p>La communication met en avant les savoir-faire d’analyse, la capacité à établir des rapports d’audit
-                concernant un produit interactif, d’une marque ou d’une organisation. </p>
-            </div>
+            <router-link to="/pole-communication">
+              <div class="content-pole">
+                <h5>Comprendre et <br>exploiter...</h5>
+                <p>La communication met en avant les savoir-faire d’analyse, la capacité à établir des rapports d’audit
+                  concernant un produit interactif, d’une marque ou d’une organisation. </p>
+              </div>
+            </router-link>
           </div>
         </li>
         <li>
           <div class="pole design">
             <h4>Design</h4>
-            <div class="content-pole">
-              <h5>S'inspirer et <br>créer...</h5>
-              <p>Dans le pôle design, les étudiants créeront des interfaces de site web, leur parcours utilisateur et
-                les
-                interactions. Ils devront pallier des connaissances créatives et techniques, en veillant à l’ergonomie
-                et
-                à l’accessibilité pour un référentiel de qualité. </p>
-            </div>
+            <router-link to="/pole-design">
+              <div class="content-pole">
+                <h5>S'inspirer et <br>créer...</h5>
+                <p>Dans le pôle design, les étudiants créeront des interfaces de site web, leur parcours utilisateur et
+                  les
+                  interactions. Ils devront pallier des connaissances créatives et techniques, en veillant à l’ergonomie
+                  et
+                  à l’accessibilité pour un référentiel de qualité. </p>
+              </div>
+            </router-link>
           </div>
         </li>
       </ul>

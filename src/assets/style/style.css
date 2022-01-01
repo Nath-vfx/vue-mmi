@@ -1,6 +1,5 @@
 @import "font.css";
 @import "color-style.css";
-@import "components/style-accueil.css";
 /* Navigation */
 body {
   margin: 0;
@@ -145,6 +144,11 @@ ul {
 }
 .underline-toggle {
   border-bottom: solid 2px black;
+}
+@media screen and (max-width: 725px) {
+  .underline-toggle {
+    border: none;
+  }
 }
 #sous-menu li {
   padding-top: 1em;

@@ -5,7 +5,7 @@
         <h3>Formulaire</h3>
         <p>Des idées de contenus, des messages à faire passer, des questions : ce formulaire est là pour vous !</p>
       </div>
-      <form action="send">
+      <form ref="form" @submit.prevent="sendEmail">
         <div class="contactForm">
           <div class="champs">
             <label for="name">Votre nom :</label>
@@ -17,7 +17,7 @@
           </div>
           <div class="msg">
             <label>Votre message</label>
-            <textarea id="msg"></textarea>
+            <textarea id="msg" name="message"></textarea>
             <div class="sendButton">
               <button type="submit">Envoyer</button>
             </div>
@@ -31,8 +31,20 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser';
+
 export default {
-  name: "formComponent"
+  name: "formComponent",
+  methods: {
+    sendEmail() {
+      emailjs.sendForm('service_zlzapk7', 'template_9n6xhso', this.$refs.form, 'user_YBH8eaO9gC7pCO7FvCEJ3')
+          .then((result) => {
+            console.log('SUCCESS!', result.text);
+          }, (error) => {
+            console.log('FAILED...', error.text);
+          });
+    }
+  }
 }
 </script>
 

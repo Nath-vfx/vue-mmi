@@ -12,7 +12,9 @@ import LicencePro from "@/views/LicencePro";
 import MentionsLegales from "@/views/MentionsLegales";
 import CGU from "@/views/CGU";
 import PolitiqueConfidentialite from "@/views/PolitiqueConfidentialite";
-
+import Communication from "@/views/Poles/Communication";
+import Design from "@/views/Poles/Design";
+import Developpement from "@/views/Poles/Developpement";
 
 Vue.use(VueRouter)
 
@@ -135,6 +137,21 @@ const routes = [
     name: 'PolitiqueConfidentialite',
     component: PolitiqueConfidentialite
   },
+  {
+    path: '/pole-communication',
+    name: 'PoleCommunication',
+    component: Communication
+  },
+  {
+    path: '/pole-design',
+    name: 'PoleDesign',
+    component: Design
+  },
+  {
+    path: '/pole-developpement',
+    name: 'PoleDeveloppement',
+    component: Developpement
+  }
     /*Composants*/
 ]
 
