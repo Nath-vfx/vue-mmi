@@ -4,7 +4,7 @@
       <nav id="navigation">
         <div id="brand">
           <router-link to="/">
-            <img src="images/Logo%20MMi-black.svg" alt="Logo du département MMI de Montbéliard">
+            <img src="images/Logos/logo-MMI.svg" alt="Logo du département MMI de Montbéliard">
           </router-link>
         </div>
         <div id="menu-burger" onclick="document.getElementById('burger').classList.toggle('deploy-menu')"></div>
@@ -122,7 +122,7 @@
           </a></li>
         </ul>
         <ul>
-          <li id="logoMMifooter"><a href="#"><img src="images/Logo%20MMi-black.svg"
+          <li id="logoMMifooter"><a href="#"><img src="images/Logos/logo-MMI.svg"
                                                   alt="Logo du département MMI de Montbéliard"></a></li>
         </ul>
         <ul>

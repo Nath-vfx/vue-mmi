@@ -59,7 +59,7 @@ ul {
       display: block;
     }
     h5:after {
-      content: url("../../../public/images/dotted-separator.svg");
+      content: url("../../../public/images/Decoration/dotted-separator.svg");
       position: absolute;
       width: 1vw;
       left: 60px;

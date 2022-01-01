@@ -158,7 +158,7 @@ export default {
           z-index: 1;
         }
         h4::after {
-          content: url("../../public/images/shapeDesign.svg");
+          content: url("../../public/images/Pages/Design/shapeDesign.svg");
           position: absolute;
           left: 120px;
           top: -42px;
@@ -177,7 +177,7 @@ export default {
           z-index: 1;
         }
         h4::after {
-          content: url("../../public/images/shapeDev.svg");
+          content: url("../../public/images/Pages/Developpement/shapeDev.svg");
           position: absolute;
           left: 120px;
           top: -42px;
@@ -196,7 +196,7 @@ export default {
           z-index: -1;
         }
         h4::after {
-          content: url("../../public/images/shapeCom.svg");
+          content: url("../../public/images/Pages/Communication/shapeCom.svg");
           position: absolute;
           left: 120px;
           top: -42px;

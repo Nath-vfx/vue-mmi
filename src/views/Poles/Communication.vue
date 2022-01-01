@@ -3,7 +3,7 @@
     <div
         class="heading">
       <h1>Communication</h1>
-      <img src="../../../public/images/ellipseCom.svg" alt="Ellipse représentatn la communication">
+      <img src="../../../public/images/Pages/Communication/ellipseCom.svg" alt="Ellipse représentant la communication">
     </div>
     <div>
       <div class="flexible">
@@ -18,7 +18,7 @@
           </p>
         </aside>
         <aside>
-          <img src="../../../public/images/megaphone.svg" alt="Mégaphone">
+          <img src="../../../public/images/Pages/Communication/megaphone.svg" alt="Mégaphone">
         </aside>
       </div>
       <div class="flexible reverse">
@@ -33,7 +33,7 @@
             budgétisation. </p>
         </aside>
         <aside>
-          <img src="../../../public/images/pageMegaphone.svg" alt="">
+          <img src="../../../public/images/Pages/Communication/pageMegaphone.svg" alt="">
         </aside>
       </div>
     </div>
@@ -61,7 +61,7 @@ export default {
 
 <style lang="less" scoped>
 #pole {
-  background: url("../../../public/images/dottedLineCom.svg") no-repeat center;
+  background: url("../../../public/images/Pages/Communication/dottedLineCom.svg") no-repeat center;
 }
 
 h1, h4 {
