@@ -3,7 +3,7 @@
     <div
         class="heading">
       <h1>Communication</h1>
-      <img src="../../../public/images/ellipseCom.svg" alt="Ellipse représentatn la communication">
+      <img src="../../../public/images/ellipseCom.svg" alt="Ellipse représentant la communication">
     </div>
     <div>
       <div class="flexible">
