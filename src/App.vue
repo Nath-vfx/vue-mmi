@@ -73,9 +73,6 @@
               <router-link to="/mentions-legales">Mentions légales</router-link>
             </li>
             <li>
-              <router-link to="/cgu">CGU</router-link>
-            </li>
-            <li>
               <router-link to="/politique-confidentialite">Politique de <br>confidentialités</router-link>
             </li>
           </ul>
@@ -159,9 +156,6 @@
           </li>
           <li>
             <router-link to="/mentions-legales">Mentions légales</router-link>
-          </li>
-          <li>
-            <router-link to="/cgu">CGU</router-link>
           </li>
         </ul>
       </div>

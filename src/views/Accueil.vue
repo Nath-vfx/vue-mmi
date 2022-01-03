@@ -89,8 +89,8 @@
       </div>
       <div>
         <img
-            src="https://images.unsplash.com/photo-1639052558054-12ab3029d10d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            alt="">
+            src="https://db-cms-montbeliard.nathanvanbignootvincler.fr/wp-content/uploads/2022/01/travail.jpg"
+            alt="Espace Professionnel">
         <aside>
           <h3>Espace <br><span>Professionnel</span></h3>
           <p>Vous avez un projet ? Vous cherchez un stagiaire ? Proposez vos offres aux étudiants. Ils seront ravis de
@@ -114,7 +114,7 @@
           </a>
         </aside>
         <img
-            src="https://images.unsplash.com/photo-1638984849686-c4d36d202b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
             alt="">
       </div>
       <div>
@@ -172,8 +172,8 @@ export default {
     min-height: 730px;
     max-height: 80vh;
     width: 100%;
-    background: url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") no-repeat;
-    background-position: top right;
+    background: url("https://db-cms-montbeliard.nathanvanbignootvincler.fr/wp-content/uploads/2022/01/allee-departement.jpg") no-repeat center;
+    background-size: cover;
 
     section > * {
       color: white;
@@ -308,6 +308,7 @@ export default {
     img {
       width: 50%;
       max-height: 536px;
+      object-fit: cover;
     }
   }
 
