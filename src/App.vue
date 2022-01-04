@@ -123,7 +123,7 @@
                                                   alt="Logo du département MMI de Montbéliard"></router-link></li>
         </ul>
         <ul>
-          <li><a href="#">
+          <li><a href="https://www.instagram.com/mmi_montbeliard/?hl=fr">
             <svg class="social-footer" width="37" height="36" viewBox="0 0 37 36" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -131,7 +131,7 @@
                   fill="white"/>
             </svg>
           </a></li>
-          <li><a href="#">
+          <li><a href="https://www.facebook.com/mmimontbeliard">
             <svg class="social-footer" width="35" height="35" viewBox="0 0 35 35" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -139,7 +139,7 @@
                     fill="white"/>
             </svg>
           </a></li>
-          <li><a href="#">
+          <li><a href="https://fr.linkedin.com/school/mmimontbeliard/">
             <svg class="social-footer" width="37" height="36" viewBox="0 0 37 36" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
