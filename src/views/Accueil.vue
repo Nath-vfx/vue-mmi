@@ -7,7 +7,9 @@
         <p>Département des métiers du multimédia et de l'internet</p>
       </section>
       <aside>
-        <button>Découvrir</button>
+        <router-link to="/but-mmi">
+          <button>Découvrir</button>
+        </router-link>
         <router-link to="/espace-pro">
           <button>Espace Pro</button>
         </router-link>
@@ -16,7 +18,7 @@
       <div>
         <ul>
           <li>
-            <a href="#">
+            <a href="https://www.univ-fcomte.fr/">
               <svg class="logoUniv" width="146" height="35" viewBox="0 0 146 35" fill="none"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect y="0.464111" width="145.055" height="34.0247" fill="url(#pattern0)"/>
@@ -31,7 +33,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="http://www.iut-bm.univ-fcomte.fr/">
               <svg class="logoUniv" width="109" height="47" viewBox="0 0 109 47" fill="none"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect y="0.459839" width="108.205" height="46.0328" fill="url(#pattern1)"/>
@@ -290,7 +292,7 @@ export default {
     margin-right: 40px;
     display: flex;
     aside:nth-child(1) {
-      width: 50%;
+      width: 35%;
       height: 500px;
     }
     aside:nth-child(2) {

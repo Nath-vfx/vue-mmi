@@ -22,14 +22,12 @@ export default {
 h3 {
   font-size: 2.4rem;
   font-weight: bold;
-  color: #FFFFFF;
   writing-mode: vertical-lr;
   text-orientation: mixed;
   padding-top: 16rem;
   padding-left: 1rem;
 }
 #poles {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,19 +38,12 @@ h3 {
     height: 400px;
     margin: 3rem;
     transition: all .3s ease;
-    position: absolute;
-  }
-  div:nth-child(1) {
-    left: -350px;
-  }
-  div:nth-child(2) {
-    left: 0px;
-  }
-  div:nth-child(3) {
-    left: 350px;
+    color: #FFFFFF;
   }
   div:hover {
     width: 250px;
+    color: black;
+    background-color: #FFFFFF;
   }
 }
 
