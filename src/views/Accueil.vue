@@ -75,17 +75,22 @@
       </div>
     </main>
     <div id="content">
-      <div>
-        <h3>BUT <span>MMI</span></h3>
-        <p>Vous former aux métiers du web : tel est l’objectif du BUT MMI (Métiers du Multimédia & d'Internet). En trois
-          ans, vous serez capable de concevoir et de réaliser des produits et services multimédia en ligne.
-        </p>
-        <p>Ce cursus dispensé en formation initiale ou en alternance à partir de la deuxième année permet un accès
-          direct
-          à la vie professionnelle et autorise diverses poursuites d’études.</p>
-        <a href="">
-          <button>Découvrir</button>
-        </a>
+      <div id="BUT">
+        <aside>
+          <h3>BUT <span>MMI</span></h3>
+          <p>Vous former aux métiers du web : tel est l’objectif du BUT MMI (Métiers du Multimédia & d'Internet). En trois
+            ans, vous serez capable de concevoir et de réaliser des produits et services multimédia en ligne.
+          </p>
+          <p>Ce cursus dispensé en formation initiale ou en alternance à partir de la deuxième année permet un accès
+            direct
+            à la vie professionnelle et autorise diverses poursuites d’études.</p>
+          <a href="">
+            <button>Découvrir</button>
+          </a>
+        </aside>
+        <aside>
+          <poles-component/>
+        </aside>
       </div>
       <div>
         <img
@@ -96,9 +101,9 @@
           <p>Vous avez un projet ? Vous cherchez un stagiaire ? Proposez vos offres aux étudiants. Ils seront ravis de
             collaborer avec vous.
           </p>
-          <a href="">
+          <router-link to="/espace-pro">
             <button>Déposer une offre</button>
-          </a>
+          </router-link>
         </aside>
       </div>
       <div>
@@ -109,13 +114,13 @@
             d'enseignement général et professionnel) partenaires au Canada.
           </p>
           <p>Le stage de fin d'études est également l'occasion de tenter la mobilité internationale.</p>
-          <a href="">
+          <router-link to="/mobilite">
             <button>Découvrir</button>
-          </a>
+          </router-link>
         </aside>
         <img
             src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-            alt="">
+            alt="Mobilité Internationale">
       </div>
       <div>
 
@@ -146,9 +151,13 @@
 </template>
 
 <script>
+import polesComponent from "@/components/Accueil/poles.component";
 
 export default {
   name: 'Accueil',
+  components: {
+    polesComponent
+  },
   data() {
     return {
       msg: 'Ceci est la page d\'accueil'
@@ -277,8 +286,17 @@ export default {
 
 #content {
   div:nth-child(1) {
-    width: 30%;
     margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    aside:nth-child(1) {
+      width: 50%;
+      height: 500px;
+    }
+    aside:nth-child(2) {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   div:nth-child(2) {

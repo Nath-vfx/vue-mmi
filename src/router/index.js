@@ -14,6 +14,7 @@ import PolitiqueConfidentialite from "@/views/PolitiqueConfidentialite";
 import Communication from "@/views/Poles/Communication";
 import Design from "@/views/Poles/Design";
 import Developpement from "@/views/Poles/Developpement";
+import ArticleView from "@/components/Actu/article.view";
 
 Vue.use(VueRouter)
 
@@ -169,6 +170,11 @@ const routes = [
         path: '/pole-developpement',
         name: 'PoleDeveloppement',
         component: Developpement
+    },
+    {
+        path: '/article/:id',
+        name: 'Article',
+        component: ArticleView
     }
     /*Composants*/
 ]
