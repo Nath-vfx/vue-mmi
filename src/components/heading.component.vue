@@ -40,7 +40,6 @@ export default {
 
 main {
   height: 730px;
-
   aside {
     padding-left: 30px;
     height: 100%;

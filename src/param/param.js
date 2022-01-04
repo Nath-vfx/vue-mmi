@@ -1,3 +1,4 @@
 export default {
-    host : 'http://localhost:8888/cms-headless/wp-json/wp/v2/',
+    host : 'https://db-cms-montbeliard.nathanvanbignootvincler.fr/wp-json/wp/v2/',
+    host_spe : 'https://db-cms-montbeliard.nathanvanbignootvincler.fr/wp-json/'
 }

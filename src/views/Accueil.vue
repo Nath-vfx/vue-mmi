@@ -7,7 +7,9 @@
         <p>Département des métiers du multimédia et de l'internet</p>
       </section>
       <aside>
-        <button>Découvrir</button>
+        <router-link to="/but-mmi">
+          <button>Découvrir</button>
+        </router-link>
         <router-link to="/espace-pro">
           <button>Espace Pro</button>
         </router-link>
@@ -16,7 +18,7 @@
       <div>
         <ul>
           <li>
-            <a href="#">
+            <a href="https://www.univ-fcomte.fr/">
               <svg class="logoUniv" width="146" height="35" viewBox="0 0 146 35" fill="none"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect y="0.464111" width="145.055" height="34.0247" fill="url(#pattern0)"/>
@@ -31,7 +33,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="http://www.iut-bm.univ-fcomte.fr/">
               <svg class="logoUniv" width="109" height="47" viewBox="0 0 109 47" fill="none"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect y="0.459839" width="108.205" height="46.0328" fill="url(#pattern1)"/>
@@ -75,30 +77,35 @@
       </div>
     </main>
     <div id="content">
-      <div>
-        <h3>BUT <span>MMI</span></h3>
-        <p>Vous former aux métiers du web : tel est l’objectif du BUT MMI (Métiers du Multimédia & d'Internet). En trois
-          ans, vous serez capable de concevoir et de réaliser des produits et services multimédia en ligne.
-        </p>
-        <p>Ce cursus dispensé en formation initiale ou en alternance à partir de la deuxième année permet un accès
-          direct
-          à la vie professionnelle et autorise diverses poursuites d’études.</p>
-        <a href="">
-          <button>Découvrir</button>
-        </a>
+      <div id="BUT">
+        <aside>
+          <h3>BUT <span>MMI</span></h3>
+          <p>Vous former aux métiers du web : tel est l’objectif du BUT MMI (Métiers du Multimédia & d'Internet). En trois
+            ans, vous serez capable de concevoir et de réaliser des produits et services multimédia en ligne.
+          </p>
+          <p>Ce cursus dispensé en formation initiale ou en alternance à partir de la deuxième année permet un accès
+            direct
+            à la vie professionnelle et autorise diverses poursuites d’études.</p>
+          <a href="">
+            <button>Découvrir</button>
+          </a>
+        </aside>
+        <aside>
+          <poles-component/>
+        </aside>
       </div>
       <div>
         <img
-            src="https://images.unsplash.com/photo-1639052558054-12ab3029d10d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            alt="">
+            src="https://db-cms-montbeliard.nathanvanbignootvincler.fr/wp-content/uploads/2022/01/travail.jpg"
+            alt="Espace Professionnel">
         <aside>
           <h3>Espace <br><span>Professionnel</span></h3>
           <p>Vous avez un projet ? Vous cherchez un stagiaire ? Proposez vos offres aux étudiants. Ils seront ravis de
             collaborer avec vous.
           </p>
-          <a href="">
+          <router-link to="/espace-pro">
             <button>Déposer une offre</button>
-          </a>
+          </router-link>
         </aside>
       </div>
       <div>
@@ -109,13 +116,13 @@
             d'enseignement général et professionnel) partenaires au Canada.
           </p>
           <p>Le stage de fin d'études est également l'occasion de tenter la mobilité internationale.</p>
-          <a href="">
+          <router-link to="/mobilite">
             <button>Découvrir</button>
-          </a>
+          </router-link>
         </aside>
         <img
-            src="https://images.unsplash.com/photo-1638984849686-c4d36d202b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-            alt="">
+            src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            alt="Mobilité Internationale">
       </div>
       <div>
 
@@ -146,9 +153,13 @@
 </template>
 
 <script>
+import polesComponent from "@/components/Accueil/poles.component";
 
 export default {
   name: 'Accueil',
+  components: {
+    polesComponent
+  },
   data() {
     return {
       msg: 'Ceci est la page d\'accueil'
@@ -172,8 +183,8 @@ export default {
     min-height: 730px;
     max-height: 80vh;
     width: 100%;
-    background: url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") no-repeat;
-    background-position: top right;
+    background: url("https://db-cms-montbeliard.nathanvanbignootvincler.fr/wp-content/uploads/2022/01/allee-departement.jpg") no-repeat center;
+    background-size: cover;
 
     section > * {
       color: white;
@@ -277,8 +288,17 @@ export default {
 
 #content {
   div:nth-child(1) {
-    width: 30%;
     margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    aside:nth-child(1) {
+      width: 35%;
+      height: 500px;
+    }
+    aside:nth-child(2) {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   div:nth-child(2) {
@@ -308,6 +328,7 @@ export default {
     img {
       width: 50%;
       max-height: 536px;
+      object-fit: cover;
     }
   }
 

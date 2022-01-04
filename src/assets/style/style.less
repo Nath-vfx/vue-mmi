@@ -16,6 +16,11 @@ body {
   flex-direction: column;
 }
 
+header {
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
 nav, #burger {
   display: flex;
   width: 100%;
@@ -33,7 +38,7 @@ nav, #burger {
   display: none;
   z-index: 100;
   @media screen {
-    @media (max-width: 725px){
+    @media (max-width: 725px) {
       display: block;
       position: absolute;
       top: 30px;
@@ -101,7 +106,7 @@ ul {
 .nav-centrale li:not(:first-child) {
   padding-left: 30px;
   @media screen {
-    @media (max-width: 725px){
+    @media (max-width: 725px) {
       padding-left: 0;
       padding-top: 10px;
     }
@@ -114,7 +119,7 @@ ul {
   transform: rotateZ(180deg);
   right: 32px;
   @media screen {
-    @media (max-width: 725px){
+    @media (max-width: 725px) {
       display: none;
     }
   }
@@ -122,7 +127,7 @@ ul {
 
 .extra-nav-entry {
   @media screen {
-    @media (max-width: 725px){
+    @media (max-width: 725px) {
       border-bottom: 1px solid black;
       width: 100%;
     }
@@ -143,7 +148,7 @@ ul {
   transition: .3s all ease-out;
   z-index: -1;
   @media screen {
-    @media (max-width: 725px){
+    @media (max-width: 725px) {
       position: initial;
       width: auto;
     }
@@ -257,7 +262,6 @@ footer h1 {
 }
 
 
-
 .footer-logo {
   display: flex;
   width: 100%;
@@ -319,7 +323,7 @@ footer .logoUniv {
 
 .fade-enter, .fade-leave-to {
   opacity: 0;
-  transform: translateX(2em);
+  transform: translateY(-2em);
 }
 
 .fade-enter-active, .fade-leave-active {

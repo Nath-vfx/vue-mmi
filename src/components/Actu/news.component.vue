@@ -1,55 +1,50 @@
 <template>
+
   <div class="lastNews">
     <ul>
-      <li>
+      <li v-for="article in liste" :key="article.id">
+        <router-link :to="{ name: 'Article', params : {id : article.id} }">
         <div>
           <img
-              src="https://images.unsplash.com/photo-1640595556705-005e7b7ea2cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              alt="">
+              :src=article.acf.image.url
+              :alt=article.acf.image.alt>
         </div>
         <div>
-          <span class="category">Category</span>
-          <span class="date">29 Jan, 2022</span>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra faucibus gravida ante lobortis. Sed
-            facilisis odio eget tortor leo. </p>
+          <span class="category"></span>
+          <span class="date">{{article.acf.date}}</span>
+          <h4>{{article.acf.titre}}</h4>
+          <p>{{article.acf.texte | liveSubstr(100)}}</p>
         </div>
-      </li>
-      <li>
-        <div>
-          <img
-              src="https://images.unsplash.com/photo-1640595556705-005e7b7ea2cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              alt="">
-        </div>
-        <div>
-          <span class="category">Category</span>
-          <span class="date">29 Jan, 2022</span>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra faucibus gravida ante lobortis. Sed
-            facilisis odio eget tortor leo. </p>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img
-              src="https://images.unsplash.com/photo-1640595556705-005e7b7ea2cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              alt="">
-        </div>
-        <div>
-          <span class="category">Category</span>
-          <span class="date">29 Jan, 2022</span>
-          <h4>Lorem Ipsum</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra faucibus gravida ante lobortis. Sed
-            facilisis odio eget tortor leo. </p>
-        </div>
+        </router-link>
       </li>
     </ul>
   </div>
+
 </template>
 
 <script>
+import param from "@/param/param";
+
 export default {
-  name: "newsComponent"
+  /* eslint-disable */
+  name: "newsComponent",
+  data() {
+    return {
+      liste : []
+    }
+  },
+  filters: {
+    liveSubstr: function(string, nb) {
+      return string.substring(0,nb) + '...';
+    },
+  },
+  created: function () {
+    axios.get(param.host + "simplified").then(response => {
+      console.log("Response", response);
+      this.liste = response.data;
+    })
+    .catch(error => console.log(error))
+  }
 }
 </script>
 

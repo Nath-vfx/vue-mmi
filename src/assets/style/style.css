@@ -11,6 +11,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+header {
+  background-color: #FFFFFF;
+  z-index: 1;
+}
 nav,
 #burger {
   display: flex;
@@ -268,7 +272,7 @@ footer .logoUniv {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
-  transform: translateX(2em);
+  transform: translateY(-2em);
 }
 .fade-enter-active,
 .fade-leave-active {

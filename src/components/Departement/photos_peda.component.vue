@@ -2,9 +2,9 @@
   <div>
     <ul>
       <li v-for="photo_peda in liste" :key="photo_peda.id">
-        <img :src="photo_peda.acf.photo" alt="">
-        <h5>{{photo_peda.acf.prenom_photo}} <br><span>{{photo_peda.acf.nom_photo}}</span></h5>
-        <span>{{photo_peda.acf.role_photo}}</span>
+        <img :src="photo_peda.photo" alt="">
+        <h5>{{photo_peda.prenom_photo}} <br><span>{{photo_peda.nom_photo}}</span></h5>
+        <span>{{photo_peda.role_photo}}</span>
       </li>
     </ul>
   </div>
@@ -22,7 +22,7 @@ export default {
     }
   },
   created() {
-    axios.get(param.host+"photo_peda").then(response => {
+    axios.get(param.host_spe+"photo_peda/v1/"+"liste_photo_peda").then(response => {
       console.log("Reponse", response);
       this.liste = response.data;
     })

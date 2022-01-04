@@ -73,9 +73,6 @@
               <router-link to="/mentions-legales">Mentions légales</router-link>
             </li>
             <li>
-              <router-link to="/cgu">CGU</router-link>
-            </li>
-            <li>
               <router-link to="/politique-confidentialite">Politique de <br>confidentialités</router-link>
             </li>
           </ul>
@@ -94,7 +91,7 @@
       </div>
       <div class="footer-logo">
         <ul>
-          <li><a href="#">
+          <li><a href="https://www.univ-fcomte.fr/">
             <svg class="logoUniv" width="146" height="35" viewBox="0 0 146 35" fill="none"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect y="0.464111" width="145.055" height="34.0247" fill="url(#pattern0)"/>
@@ -107,7 +104,7 @@
               </defs>
             </svg>
           </a></li>
-          <li><a href="#">
+          <li><a href="http://www.iut-bm.univ-fcomte.fr/">
             <svg class="logoUniv" width="109" height="47" viewBox="0 0 109 47" fill="none"
                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect y="0.459839" width="108.205" height="46.0328" fill="url(#pattern1)"/>
@@ -122,11 +119,11 @@
           </a></li>
         </ul>
         <ul>
-          <li id="logoMMifooter"><a href="#"><img src="images/Logos/logo-MMI.svg"
-                                                  alt="Logo du département MMI de Montbéliard"></a></li>
+          <li id="logoMMifooter"><router-link to="/" href="#"><img src="images/Logos/logo-MMI.svg"
+                                                  alt="Logo du département MMI de Montbéliard"></router-link></li>
         </ul>
         <ul>
-          <li><a href="#">
+          <li><a href="https://www.instagram.com/mmi_montbeliard/?hl=fr">
             <svg class="social-footer" width="37" height="36" viewBox="0 0 37 36" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -134,7 +131,7 @@
                   fill="white"/>
             </svg>
           </a></li>
-          <li><a href="#">
+          <li><a href="https://www.facebook.com/mmimontbeliard">
             <svg class="social-footer" width="35" height="35" viewBox="0 0 35 35" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -142,7 +139,7 @@
                     fill="white"/>
             </svg>
           </a></li>
-          <li><a href="#">
+          <li><a href="https://fr.linkedin.com/school/mmimontbeliard/">
             <svg class="social-footer" width="37" height="36" viewBox="0 0 37 36" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -159,9 +156,6 @@
           </li>
           <li>
             <router-link to="/mentions-legales">Mentions légales</router-link>
-          </li>
-          <li>
-            <router-link to="/cgu">CGU</router-link>
           </li>
         </ul>
       </div>
