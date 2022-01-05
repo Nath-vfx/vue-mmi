@@ -11,7 +11,7 @@
           <button>Découvrir</button>
         </router-link>
         <router-link to="/espace-pro">
-          <button>Espace Pro</button>
+          <button class="pro">Espace Pro</button>
         </router-link>
 
       </aside>
@@ -224,7 +224,7 @@ export default {
         font-size: 1.6rem;
       }
 
-      button:nth-child(2) {
+      button.pro {
         background-color: rgba(11, 74, 197, 0.7);
         color: white;
       }
@@ -235,14 +235,26 @@ export default {
       height: 200px;
       margin-top: 6em;
 
+      ul:first-child {
+        @media screen and (max-width: 725px) {
+          align-items: flex-start;
+        }
+      }
+
       ul {
         display: flex;
         flex-grow: 1;
         align-items: flex-end;
         padding-left: 20px;
+        @media screen and (max-width: 725px) {
+          flex-direction: column;
+        }
 
         li {
           padding-right: 2em;
+          @media screen and (max-width: 725px){
+            padding-bottom: 3rem;
+          }
         }
       }
 
@@ -287,13 +299,19 @@ export default {
 }
 
 #content {
-  div:nth-child(1) {
+  div#BUT {
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
     aside:nth-child(1) {
       width: 35%;
       height: 500px;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
     }
     aside:nth-child(2) {
       margin-right: auto;
@@ -305,15 +323,28 @@ export default {
     margin-top: 6rem;
   }
 
+  div:nth-child(2) {
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+  }
+  div:nth-child(3) {
+    @media screen and (max-width: 800px) {
+      flex-direction: column-reverse;
+    }
+  }
+
   div:nth-child(2), div:nth-child(3) {
     width: 100%;
     display: flex;
-
     aside {
       display: flex;
       flex-direction: column;
       width: 50%;
-
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
       *:not(span) {
         margin-left: 30px;
         margin-right: 60px;
@@ -329,6 +360,9 @@ export default {
       width: 50%;
       max-height: 536px;
       object-fit: cover;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
     }
   }
 
@@ -340,12 +374,17 @@ export default {
     justify-content: center;
     margin-bottom: 60px;
     margin-top: 10rem;
-
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
     h3 {
       width: 50%;
       margin-left: 30px;
       margin-top: auto;
       margin-bottom: auto;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
     }
 
     aside {
@@ -353,6 +392,11 @@ export default {
       font-size: 2rem;
       padding-left: 60px;
       border-left: 1px solid black;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        border-left: none;
+        margin: 2rem -40px;
+      }
 
       ul {
         li {
