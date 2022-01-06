@@ -98,6 +98,9 @@ export default {
     position: absolute;
     right: 150px;
     bottom: 30px;
+    @media screen and (max-width: 725px) {
+      right: 20px;
+    }
   }
   div:last-child {
     margin-bottom: 10rem;
