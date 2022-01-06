@@ -23,7 +23,7 @@
           formulaire.</p>
       </div>
       <div class="boutons-espace-pro">
-        <a href="">
+        <a href="http://src-media.com/node/add/proposition-offre-emploi">
           <button>Déposer une offre</button>
         </a>
       </div>
@@ -41,7 +41,7 @@
         <p>N’hésitez plus… Contactez-nous pour adopter un apprenti !</p>
       </div>
       <div class="boutons-espace-pro">
-        <a href="">
+        <a href="http://src-media.com/node/add/proposition-offre-emploi">
           <button>Déposer une offre</button>
         </a>
       </div>
@@ -59,7 +59,7 @@
         <p>N’hésitez plus… Contactez-nous pour adopter un apprenti !</p>
       </div>
       <div class="boutons-espace-pro">
-        <a href="">
+        <a href="http://src-media.com/projets-etudiants/proposition-projet">
           <button>Proposer un projet</button>
         </a>
       </div>
@@ -131,6 +131,7 @@ export default {
     background-color: #FFFFFF;
     box-shadow: 0 0 8px #9A9A9A;
     width: 320px;
+    cursor: pointer;
   }
 }
 </style>

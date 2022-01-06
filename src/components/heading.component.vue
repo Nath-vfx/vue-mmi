@@ -71,7 +71,7 @@ main {
           -webkit-background-clip: text;
           color: transparent;
           @media screen and (max-width: 872px){
-            font-size: 6.4rem;
+            font-size: 5.8rem;
           }
 
         }
@@ -93,6 +93,7 @@ main {
       p {
         @media screen and (max-width: 872px) {
           margin-top: 4rem;
+          width: 90%;
         }
         font-family: Lato, sans-serif;
         font-weight: normal;

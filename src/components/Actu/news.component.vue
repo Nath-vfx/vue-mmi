@@ -10,7 +10,7 @@
               :alt=article.acf.image.alt>
         </div>
         <div>
-          <span class="category"></span>
+          <span class="author">{{article.acf.auteur.nickname | liteLiveSubstr(12)}}</span>
           <span class="date">{{article.acf.date}}</span>
           <h4>{{article.acf.titre}}</h4>
           <p>{{article.acf.texte | liveSubstr(100)}}</p>
@@ -37,6 +37,9 @@ export default {
     liveSubstr: function(string, nb) {
       return string.substring(0,nb) + '...';
     },
+    liteLiveSubstr: function (string, nb) {
+      return string.substring(0,nb) +'.';
+    }
   },
   created: function () {
     axios.get(param.host + "simplified").then(response => {
@@ -60,9 +63,12 @@ export default {
     grid-template-columns: repeat(auto-fit, 350px);
     grid-gap: 3rem;
     justify-content: center;
-
+    li:hover {
+      transform: scale(1.1);
+    }
     li {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+      transition: all .3s ease;
 
       div:nth-child(2) {
         padding: 2.5rem;
@@ -75,7 +81,7 @@ export default {
           object-fit: cover;
         }
 
-        .category {
+        .author {
           background-color: #8D92FF;
           font-size: 1.8rem;
           color: #FFFFFF;

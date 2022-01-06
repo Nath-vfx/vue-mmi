@@ -4,6 +4,11 @@
     <h1>{{ article.acf.titre }}</h1>
     <p v-html="article.acf.texte">
     </p>
+    <span>Par {{article.acf.auteur.nickname}}</span>
+    <router-link to="/actualites">
+      <button>Plus d'articles</button>
+    </router-link>
+
   </div>
 </template>
 
@@ -33,7 +38,10 @@ export default {
 
 
 <style lang="less" scoped>
-
+div {
+  margin-bottom: 10rem;
+  position: relative;
+}
 img {
   width: 100%;
   height: 475px;
@@ -59,7 +67,31 @@ p {
   font-weight: 300;
   margin-left: 10vw;
   margin-right: 10vw;
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
+  padding-bottom: 3rem;
+  border-bottom: 8px dashed black;
+}
+
+span {
+  margin-left: 10vw;
+  font-size: 1.6rem;
+  color: #9A9A9A;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  padding: 5px 40px;
+  font-weight: initial;
+  border-color: transparent;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 8px #9A9A9A;
+  cursor: pointer;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
 </style>

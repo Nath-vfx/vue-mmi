@@ -11,7 +11,6 @@
     <div class="content">
       <div class="programme">
         <h3>Programme <br><span>Pédagogique</span></h3>
-
         <p>Le BUT MMI est une formation pluridisciplinaire qui s’articule autour de trois axes fondamentaux : le design,
           le
           développement et la communication. Inspirés par les pratiques professionnelles, nous formons des étudiants
@@ -80,7 +79,7 @@
           du
           processus d'inscription préalable sur parcoursup.fr.</p>
         <div id="bouton-BUT-MMI">
-          <a href="">
+          <a href="https://www.parcoursup.fr/">
             <button>Déposer une candidature</button>
           </a>
         </div>
@@ -125,7 +124,12 @@ export default {
     grid-gap: 30px;
     justify-content: center;
     margin: 10rem -10vw;
+    li:hover {
+      transform: scale(1.1);
+    }
     li {
+      transition: all .3s ease;
+      cursor: pointer;
       .pole {
         h4 {
           font-size: 3.6rem;
@@ -215,6 +219,7 @@ export default {
     border-color: transparent;
     background-color: #FFFFFF;
     box-shadow: 0 0 8px #9A9A9A;
+    cursor: pointer;
   }
   text-align: end;
   @media screen and (max-width: 760px) {

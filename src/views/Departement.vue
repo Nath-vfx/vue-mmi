@@ -24,10 +24,8 @@
         </div>
 
       <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/wR4n6HU1ohM" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <img src="../../public/images/Decoration/player.svg" alt="player">
+        <span>Future Video</span>
       </div>
         <div id="actu">
           <h3>Nos actualités</h3>
@@ -107,6 +105,20 @@ export default {
     .video {
       margin-left: auto;
       margin-right: auto;
+      background-color: #E1E1E1;
+      width: 530px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 725px) {
+        margin-left: -10vw;
+        margin-right: -10vw;
+      }
+      span {
+        font-size: 3rem;
+      }
     }
   }
 }

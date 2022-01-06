@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div id="photo-peda">
     <ul>
       <li v-for="photo_peda in liste" :key="photo_peda.id">
         <img :src="photo_peda.photo" alt="">
         <h5>{{photo_peda.prenom_photo}} <br><span>{{photo_peda.nom_photo}}</span></h5>
-        <span>{{photo_peda.role_photo}}</span>
+        <span class="role">{{photo_peda.role_photo}}</span>
       </li>
     </ul>
   </div>
@@ -34,6 +34,10 @@ export default {
 
 <style lang="less" scoped>
 
+#photo-peda {
+  margin-top: 8rem;
+}
+
 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
@@ -46,6 +50,7 @@ ul {
       object-fit: cover;
     }
     h5, span {
+      margin-top: 1rem;
       font-family: Lato, sans-serif;
       font-weight: 500;
       font-size: 18px;
@@ -57,6 +62,9 @@ ul {
     }
     span {
       display: block;
+    }
+    .role {
+      padding-bottom: 2rem;
     }
     h5:after {
       content: url("../../../public/images/Decoration/dotted-separator.svg");
