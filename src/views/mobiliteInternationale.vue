@@ -103,6 +103,9 @@ h3 {
     background: -webkit-linear-gradient(0deg, rgba(85, 242, 214, 1) 16%, rgba(227, 137, 229, 1) 78%);
     -webkit-background-clip: text;
     color: transparent;
+    @media screen and (max-width: 725px) {
+      font-size: 5.2rem;
+    }
   }
 }
 h3:not(:nth-child(1)) {

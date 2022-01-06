@@ -17,7 +17,7 @@
             étudieront la structuration des paragraphes, des titres, listes, tableaux...
           </p>
         </aside>
-        <aside>
+        <aside class="img-container">
           <img src="../../../public/images/Pages/Developpement/computerDev.svg" alt="Ordinateur">
         </aside>
       </div>
@@ -33,7 +33,7 @@
             sont les langages de programmation HTML/ CSS, JavaScript, PHP.
           </p>
         </aside>
-        <aside>
+        <aside class="img-container">
           <img src="../../../public/images/Pages/Developpement/codeDev.svg" alt="Code">
         </aside>
       </div>
@@ -75,6 +75,11 @@ h1, h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  img {
+    @media screen and (max-width: 725px) {
+      width: 300px;
+    }
+  }
 }
 
 .flexible {
@@ -144,6 +149,14 @@ h1, h4 {
       font-size: 2.4rem;
       padding: 2rem 5rem 2rem 2rem;
     }
+  }
+}
+
+aside.img-container {
+  img {
+      @media screen and (max-width: 725px) {
+        width: 300px;
+      }
   }
 }
 

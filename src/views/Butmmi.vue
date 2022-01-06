@@ -124,6 +124,10 @@ export default {
     grid-gap: 30px;
     justify-content: center;
     margin: 10rem -10vw;
+    @media screen and (max-width: 725px) {
+      grid-gap: 60px;
+      grid-template-columns: repeat(auto-fit, 350px);
+    }
     li:hover {
       transform: scale(1.1);
     }
@@ -166,6 +170,9 @@ export default {
           position: absolute;
           left: 120px;
           top: -42px;
+          @media screen and (max-width: 725px) {
+            left: 90px;
+          }
         }
       }
 
@@ -185,6 +192,9 @@ export default {
           position: absolute;
           left: 120px;
           top: -42px;
+          @media screen and (max-width: 725px) {
+            left: 90px;
+          }
         }
       }
 
@@ -204,6 +214,9 @@ export default {
           position: absolute;
           left: 120px;
           top: -42px;
+          @media screen and (max-width: 725px) {
+            left: 90px;
+          }
         }
       }
 

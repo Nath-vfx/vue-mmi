@@ -17,7 +17,7 @@
             étudiants seront en mesure d’évaluer l’efficacité d’un service.
           </p>
         </aside>
-        <aside>
+        <aside class="img-container">
           <img src="../../../public/images/Pages/Communication/megaphone.svg" alt="Mégaphone">
         </aside>
       </div>
@@ -32,7 +32,7 @@
             rédactionnel optimisé pour le référencement, à rendre leur site rentable en travaillant la
             budgétisation. </p>
         </aside>
-        <aside>
+        <aside class="img-container">
           <img src="../../../public/images/Pages/Communication/pageMegaphone.svg" alt="">
         </aside>
       </div>
@@ -76,6 +76,11 @@ h1, h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  img {
+    @media screen and (max-width: 725px) {
+      width: 300px;
+    }
+  }
 }
 
 .flexible {
@@ -141,6 +146,14 @@ h1, h4 {
       font-family: Lato, sans-serif;
       font-size: 2.4rem;
       padding: 2rem 5rem 2rem 2rem;
+    }
+  }
+}
+
+aside.img-container {
+  img {
+    @media screen and (max-width: 725px) {
+      width: 300px;
     }
   }
 }

@@ -16,7 +16,7 @@
             feront du brainstorming et de la recherche pour développer leur sensibilité artistique et plastique.
           </p>
         </aside>
-        <aside>
+        <aside class="img-container">
           <img src="../../../public/images/Pages/Design/templateDesign.svg" alt="Portfolio">
         </aside>
       </div>
@@ -32,7 +32,7 @@
             d’autres supports, de type print ou web.
           </p>
         </aside>
-        <aside>
+        <aside class="img-container">
           <img src="../../../public/images/Pages/Design/lampDesign.svg" alt="idée">
         </aside>
       </div>
@@ -76,6 +76,11 @@ h1, h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  img {
+    @media screen and (max-width: 725px) {
+      width: 300px;
+    }
+  }
 }
 
 .flexible {
@@ -144,6 +149,14 @@ h1, h4 {
       font-family: Lato, sans-serif;
       font-size: 2.4rem;
       padding: 2rem 5rem 2rem 2rem;
+    }
+  }
+}
+
+aside.img-container {
+  img {
+    @media screen and (max-width: 725px) {
+      width: 300px;
     }
   }
 }

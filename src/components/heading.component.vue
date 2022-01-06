@@ -71,7 +71,7 @@ main {
           -webkit-background-clip: text;
           color: transparent;
           @media screen and (max-width: 872px){
-            font-size: 5.8rem;
+            font-size: 5.2rem;
           }
 
         }

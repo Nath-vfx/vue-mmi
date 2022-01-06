@@ -277,6 +277,9 @@ export default {
         background: -webkit-linear-gradient(0deg, rgba(85, 242, 214, 1) 16%, rgba(227, 137, 229, 1) 78%);
         -webkit-background-clip: text;
         color: transparent;
+        @media screen and (max-width: 725px) {
+          font-size: 5.6rem;
+        }
       }
     }
 
@@ -393,9 +396,10 @@ export default {
       padding-left: 60px;
       border-left: 1px solid black;
       @media screen and (max-width: 800px) {
-        width: 100%;
+        width: 90%;
         border-left: none;
         margin: 2rem -40px;
+
       }
 
       ul {
@@ -406,10 +410,15 @@ export default {
 
       h4 {
         font-size: 2.5rem;
-
+        @media screen and (max-width: 725px) {
+          font-size: 1.8rem;
+        }
         span {
           font-size: 3.1rem;
           font-weight: 700;
+          @media screen and (max-width: 725px) {
+            font-size: 2.5rem;
+          }
         }
       }
     }
