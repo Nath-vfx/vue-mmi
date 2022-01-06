@@ -94,6 +94,8 @@ export default {
           height: 33px;
           border-radius: 20px;
           border: #D197E4 1px solid;
+          font-size: 2rem;
+          padding-left: 1rem;
           @media screen and (max-width: 1000px) {
             width: 100%;
           }
@@ -109,6 +111,7 @@ export default {
         display: flex;
         flex-direction: column;
         margin-left: 5rem;
+        font-size: 2rem;
         @media screen and (max-width: 1000px) {
           margin-left: 0;
           margin-top: 3rem;
@@ -122,6 +125,8 @@ export default {
           resize: none;
           width: 520px;
           height: 284px;
+          padding: 1rem;
+          font-size: 1.4rem;
           @media screen and (max-width: 1300px) {
             width: 100%;
           }

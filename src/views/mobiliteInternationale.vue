@@ -113,16 +113,30 @@ h3:not(:nth-child(1)) {
   div.first-international {
     display: flex;
     width: 100%;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
     div:nth-child(1){
       width: 100%;
       padding-left: 30px;
       padding-right: 60px;
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
     aside {
       width: 100%;
       padding: 60px;
       margin: 60px 30px 0 102px;
       box-shadow: 0 0 8px #9A9A9A;
+      @media screen and (max-width: 800px) {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
       h4{
         text-align: center;
       }
@@ -131,17 +145,37 @@ h3:not(:nth-child(1)) {
   div.canada, div.barcelona {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
     img {
       width: 50vw;
       max-width: 960px;
+      @media screen and (max-width: 800px) {
+        width: 100vw;
+      }
+    }
+    div {
+      p {
+        @media screen and (max-width: 800px) {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+      }
     }
     div:nth-child(1){
       margin: 0 80px;
+      @media screen and (max-width: 800px) {
+        margin: 0;
+      }
     }
   }
   div.barcelona {
     flex-direction: row-reverse;
     margin-bottom: 80px;
+    @media screen and (max-width: 800px) {
+     flex-direction: column-reverse;
+    }
   }
 }
 

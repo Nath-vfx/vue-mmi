@@ -45,7 +45,7 @@ const routes = [
         meta: {
             data: {
                 titles: [{
-                    mainProname: 'Les', mainTitle: 'Actualités', mainText: 'Retrouvez les informations\n' +
+                    mainProname: 'Les', mainTitle: 'Actualités et projets', mainText: 'Retrouvez les informations\n' +
                         'complètes et à jour du département\n'
                 }],
                 mainBackground: {
